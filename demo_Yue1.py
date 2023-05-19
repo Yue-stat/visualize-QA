@@ -51,7 +51,7 @@ st.write("You selected Question", f"{index + 1}")
 
 Azure = ""
 for answer in masked["paragraphs"][0]['qas'][index]['answers']:
-     Azure += answer['text']
+     Azure = Azure + "; " + answer['text']
 
         
 
