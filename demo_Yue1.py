@@ -15,17 +15,19 @@ st.write(
 st.markdown("""---""")
 
 if "rn" not in st.session_state:
-    st.session_state["rn"] = random.randint(1, 4)
+    st.session_state["rn"] = random.randint(1, 10)
 # rand_idx = random.randint(1, 106)
 note_number = st.slider(
-    "Select the clinical note. ", 1, 4, st.session_state["rn"]
+    "Select the clinical note. ", 1, 10, st.session_state["rn"]
 )
 
 
 st.write("You selected", f"{note_number}")
 
-mtsamples = pd.read_json("tmp5(4).json")
+mtsamples = pd.read_json("demo.json")
+
 masked = mtsamples["data"][note_number-1]
+
 note = masked["paragraphs"][0]['context']
 
 q_list = []
