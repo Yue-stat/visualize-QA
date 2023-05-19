@@ -465,10 +465,758 @@ gpt4_3 = [
 '''
 ]
 
-gpt4_result = [gpt4_0, gpt4_1, gpt4_2, gpt4_3]
+gpt4_4 = [
+'''1. (Text Summarization) The patient's primary diagnosis was Acute hypoxemic respiratory failure secondary to parainfluenza 3 pneumonia.
+''',
+'''
+2. (Content extraction) The sentences in the note that describe the diagnosis include:
+- "The patient has remained profoundly hypoxemic despite broad abx coverage and diuresis, and he was found to have an elevated B-glucan and LDH, as well as NP swab positive for parainfluenza."
+- "During his course developed worsening acidosis, hyponatremia, and altered mental status."
+- "Time of death 00:15. Cause of death: parainfluenza pneumonia."
+- "Discharge Diagnosis:Acute hypoxemic respiratory failure secondary to parainfluenza 3 pneumoniaAcute on chronic diastolic heart failureDeep vein thrombosisAtrial fibrillationRheumatoid arthritisOsteomyelitis"
+''',
+'''
+3. The comorbidities of the patient, as mentioned in the discharge summary, include:
 
-if note_number < 5:
-    gpt4 = gpt4_result[note_number-1][index]
+ Rheumatoid arthritis
+ Chronic kidney disease stage 3
+ Chronic back pain
+ Hypertension
+ Hyperlipidemia
+ Type II diabetes mellitus
+''',
+'''
+4. (Content extraction) The sentences in the note that describe the comorbidities are:
+
+- "The patient is a 67-year-old female with a history of rheumatoid arthritis, chronic kidney disease stage 3, chronic back pain, hypertension, hyperlipidemia, and type II diabetes mellitus."
+- "She was initially admitted with osteomyelitis of the spine secondary to Enterococcus bacteremia."
+  ''',
+'''
+5. (Named Entity Recognition) The medications mentioned in the discharge summary are:
+
+- Intravenous antibiotics
+- Oxycodone
+- Lisinopril
+- Amlodipine
+- Gabapentin
+- Metformin
+  ''',
+'''
+6. (Content extraction) The sentences in the note that describe the medications are:
+
+- "She completed 6 weeks of intravenous antibiotics for Enterococcus bacteremia and osteomyelitis."
+- "Her medications on discharge included oxycodone for pain, Lisinopril, Amlodipine for hypertension, gabapentin for neuropathic pain, and metformin for diabetes."
+''',
+'''
+7. (Named Entity Recognition) The labs mentioned in the discharge summary include:
+
+- Creatinine levels
+- ESR (Erythrocyte Sedimentation Rate)
+- CRP (C-Reactive Protein)
+''',
+'''
+8. (Content extraction) The sentence in the note that describes the labs is: "She had stable creatinine levels and downward trending inflammatory markers (ESR, CRP)."
+''',
+'''
+9. (Text Summarization) The treatment plan for the patient includes continuing her home medications for comorbid conditions, along with periodic lab monitoring. She should follow-up with the infectious disease department in one week to ensure that her Enterococcus bacteremia and osteomyelitis are being managed properly.
+''',
+'''
+10. (Content extraction) The sentences in the note that describe the treatment plan are:
+
+- "Her medications on discharge included oxycodone for pain, Lisinopril, Amlodipine for hypertension, gabapentin for neuropathic pain, and metformin for diabetes."
+- "She is to follow up with the infectious disease department in 1 week."
+- "She will also have lab work in 1 week to check her creatinine levels and inflammatory markers."
+
+''',
+'''
+11. The identified problem of the patient is severe sepsis secondary to Enterococcus bacteremia from Osteomyelitis with SIRS criteria. The treatment plan related to this problem includes aggressive fluid resuscitation, intravenous antibiotics (Vancomycin and Ceftriaxone), as well as management of hyperglycemia with insulin.
+''',
+'''
+12. The patient's diagnoses are:
+   - Severe sepsis secondary to Enterococcus bacteremia from Osteomyelitis with SIRS criteria (recent onsite visit)
+   - Rheumatoid arthritis (past medical history)
+   - Chronic kidney disease stage 3 (past medical history)
+   - Chronic back pain (past medical history)
+   - Hypertension (past medical history)
+   - Hyperlipidemia (past medical history)
+   - Type II diabetes mellitus (past medical history)
+  ''',
+''' 
+13. The patient's admission diagnosis, severe sepsis secondary to Enterococcus bacteremia from Osteomyelitis, can be classified into the disease category of infectious diseases.
+''',
+'''
+14. The discharge summary doesn't specifically list current medications, it only mentions the use of aggressive fluid resuscitation, intravenous antibiotics (Vancomycin and Ceftriaxone), and insulin for hyperglycemia management during the hospital stay.
+''',
+'''
+15. (Repeating answer from #12) The patient's diagnoses are:
+   - Severe sepsis secondary to Enterococcus bacteremia from Osteomyelitis with SIRS criteria (recent onsite visit)
+   - Rheumatoid arthritis (past medical history)
+   - Chronic kidney disease stage 3 (past medical history)
+   - Chronic back pain (past medical history)
+   - Hypertension (past medical history)
+   - Hyperlipidemia (past medical history)
+   - Type II diabetes mellitus (past medical history)
+   ''',
+'''
+16. (Repeating answer from #13) The patient's admission diagnosis, severe sepsis secondary to Enterococcus bacteremia from Osteomyelitis, can be classified into the disease category of infectious diseases.
+''',
+'''
+17. The medications the patient was taking prior to admission are not listed in the discharge summary.
+''',
+'''
+18. The major symptoms mentioned in the discharge summary include tachycardia, hypotension, and high fevers.
+''',
+'''
+19. The relationship between the patient's rheumatoid arthritis and their current illness is not directly established in the provided discharge summary. However, it's known that rheumatoid arthritis can compromise the immune system, potentially making the patient more susceptible to infections like Enterococcus bacteremia and Osteomyelitis.
+''',
+'''
+20. The exact dates of diagnosis for Enterococcus bacteremia and Osteomyelitis are not provided in the discharge summary. It is mentioned that these diagnoses were made during the patient's recent admission.
+''',
+'''
+21. The patient came to the hospital because she had severe pain in her back, which was later found to be caused by an infection in her spine and blood.
+''',
+'''
+22. The patient's physical exam did not show any new abnormalities. Her blood pressure, heart rate, respiratory rate, and oxygen saturation were stable.
+''',
+'''
+23. In a medical context, MDS usually stands for Myelodysplastic Syndromes, which are a group of disorders caused by poorly formed blood cells or ones that don't work properly. However, MDS is not specifically mentioned in the provided note.
+''',
+'''
+24. There's no mention of any allergies or adverse drug reactions for the patient in the discharge summary.
+''',
+'''
+25. The patient, a 67-year-old woman, has just completed six weeks of intravenous antibiotics for a spine infection and a blood infection. Her kidney function remained stable during her stay and the signs of infection in her body have been decreasing. She was discharged with medications for her other chronic conditions, including pain, high blood pressure, nerve-related pain, and diabetes.
+''',
+'''
+26. There is no explicit mention in the summary about a relationship between Congestive Heart Failure (CHF) and the patient's current illness. It's important to note that CHF is not listed among the patient's known conditions.
+''',
+'''
+27. The major medical conditions mentioned in the discharge summary are rheumatoid arthritis, chronic kidney disease stage 3, chronic back pain, hypertension, hyperlipidemia, type II diabetes mellitus, Enterococcus bacteremia, and osteomyelitis.
+''',
+'''
+28. The discharge summary doesn't provide information about the patient's INR level upon admission.
+''',
+'''
+29. The discharge summary doesn't explicitly state whether the patient was able to tolerate POs (per os, by mouth intake) during their hospital stay.
+''',
+'''
+30. 'Acute hypoxemic respiratory failure' is a specific medical term itself. It refers to a condition where there is a sudden inability of the respiratory system to maintain adequate oxygen levels in the blood.
+''']
+
+
+gpt4_5 = [
+'''1. The patient's primary diagnosis is healthcare-associated pneumonia, hypernatremia, and acute metabolic encephalopathy.
+
+''',
+'''2. The sentences in the note that describe the primary diagnosis are: "HCAP: On presentation, pt had worsening mental status, leukocytosis, and CXR c/w possible left lower lobe PNA. She had a new O2 requirement as well. She was started on vanc, zosyn, and azythromycin. She completed an 8-day course on ___. PICC was removed prior to discharge."
+
+''',
+'''3. The comorbidities of the patient include Alzheimer's dementia, diabetes mellitus type 2, anemia, depression, osteoarthritis, and urinary incontinence.
+
+''',
+'''4. The sentences in the note that describe the comorbidities are: "Past Medical History: Alzheimer's Dementia w/ behavioral disturbances, Delusional Disorder, Hemiplegia ___ CVA, Peripheral vascular disease, Hypertension, Coronary Artery Disease, NIDDM, Anemia, Major Depression w/o psychosis, Osteoarthritis, Urinary Incontinence, Pernicious Anemia, Dysphagia."
+
+''',
+'''5. The medications mentioned in the discharge summary are:
+   - DuoNeb *NF* (ipratropium-albuterol) 0.5 mg-3 mg(2.5 mg base)/3 mL Inhalation q6hrs
+   - Metoprolol Tartrate 12.5 mg PO BID
+   - Guaifenesin ER 600 mg PO BID:H:PRN cough
+   - Simvastatin 20 mg PO DAILY
+   - Levofloxacin 500 mg PO Q24H
+   - Citalopram 20 mg PO DAILY
+   - Glargine 14 Units Bedtime
+   - Bisacodyl ___AILY:AILY:PRN constipation
+   - Senna 2 TAB PO HS
+   - Acetaminophen 650 mg PO Q4H:PRN pain
+   - Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral qHS
+   - Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral TID:PRN pain
+   - Docusate Sodium 100 mg PO BID
+   - Dulcolax ___X/WEEK (MO,TH) ___ and ___
+   - Fleet Enema ___AILY:PRN constipation
+   - Albuterol 0.083% Neb Soln 1 NEB IH Q6H:PRN sob/cough
+   - Ipratropium Bromide Neb 1 NEB IH Q6H:PRN cough/sob
+   - Aspirin 81 mg PO DAILY
+
+''',
+'''6. The sentences in the note that describe the medications are: "Medications on Admission: The Preadmission Medication list is accurate and complete" and "Discharge Medications: You were admitted to the hospital with pneumonia, hypernatremia (high sodium level in your blood) and altered mental status. You were treated with antibiotics and your pneumonia improved."
+''',
+'''
+7. The labs mentioned in the discharge summary are:
+   - WBC
+   - RBC
+   - Hgb
+   - Hct
+   - MCV
+   - MCH
+   - MCHC
+   - RDW
+   - Plt
+   - Neuts
+   - Lymphs
+   - Monos
+   - Eos
+   - Baso
+   - PTT
+   - Glucose
+   -
+''',
+    '''
+    8. The sentences in the note that describe the labs are:
+   - "ADMISSION LABS___ 10:10PM BLOOD WBC-20.4* RBC-4.15* Hgb-11.6* Hct-37.1 MCV-89 MCH-27.9 MCHC-31.2 RDW-14.9 Plt ______"
+   - "02:21AM BLOOD ___ PTT-21.1*"
+   - "10:10PM BLOOD Glucose-352* UreaN-33* Creat-0.7 Na-164* K-4.6 Cl-132* HCO3-19* AnGap-18"
+   - "02:21AM BLOOD ALT-24 AST-19 AlkPhos-103 TotBili-0.2"
+   - "02:21AM BLOOD Lipase-28"
+   - "02:21AM BLOOD Calcium-9.4 Phos-1.6* Mg-2.2"
+   - "12:39PM BLOOD Type-ART pO2-84* pCO2-32* pH-7.46* calTCO2-23 Base XS-0"
+   - "10:40PM BLOOD Glucose-340* Lactate-2.9* Na-166* K-3.2*"
+   - "10:50PM URINE  BLOOD-MOD NITRITE-POS PROTEIN-30 GLUCOSE-1000 KETONE-NEG BILIRUBIN-NEG UROBILNGN-NEG PH-5.5 LEUK-MOD"
+   - "10:50PM URINE  RBC-71* WBC-19* BACTERIA-FEW YEAST-MANY EPI-4"
+   - "06:18AM   LACTATE-3.1*"
+   - "09:18AM   SODIUM-121* POTASSIUM-2.7* CHLORIDE-95* TOTAL CO2-15* ANION GAP-14"
+''',
+'''
+9. The treatment plan for the patient includes administering antibiotics to address healthcare-associated pneumonia. Additionally, volume resuscitation is provided through IV fluids to correct hypernatremia and ensure hydration. The patient's sodium levels are monitored, and liquid intake is encouraged. High-calorie supplements are added to meals, and assistance with feeding is provided. Electrolytes, such as potassium and sodium, are monitored throughout the treatment process.
+
+''',
+    '''
+    10. The sentences in the note that describe the treatment plan are:
+- "HCAP: On presentation, pt had worsening mental status, leukocytosis, and CXR c/w possible left lower lobe PNA. She had a new O2 requirement as well. She was started on vanc, zosyn, and azythromycin. She completed an 8-day course on ___. PICC was removed prior to discharge."
+- "Hypernatremia: She appeared to have hypovolemic hypernatremia based on clinical exam findings of dry mucous membranes, significant respiratory variation in IVC diameter, and IJ collapse with respiratory variation. This is likely multifactorial in the setting of worsening mental status related to infection in combination with dementia. Pt was calculated to have a free water deficit of ~5L. Her hypernatremia was gradually corrected over the course of 2.5 days with ___ NS after volume resuscitation with LR. Her sodium was monitored daily and remained within the normal range. Would continue to monitor weekly while at rehab and encourage liquid intake."
+- "Nutrition/Goals of Care: It was suspected that her subacute weight loss is due to her dementia. She was seen by speech and swallow who provided diet recommendations. Also recent malnutrition due to acute illness. The issue of inadequate nutrition in patients with progressive dementia was discussed with her son ___. We discussed adding high-calorie supplements to her diet and assistance with feeding. He will consider using an appetite stimulant with her outpatient providers. We discussed that there is no evidence that tube feeding will improve quality or longevity of life, which he recognized saying that he had dealt with similar issues with his father's chronic progressive illness and ultimately passing. DIET: Regular; Diabetic/Consistent Carbohydrate Consistency: Pureed (dysphagia); Nectar prethickened liquids Supplement: Glucerna shake breakfast, lunch, dinner pills crushed in puree. Aspiration precautions, please provide assistance with feeding."
+- "HTN: Pt was mildly hypotensive on arrival and required volume resuscitation; metoprolol was therefore held. These were later restarted."
+- "Depression: she was continued on her home dose of 20mg citalopram."
+- "H/o CVA: She was continued on her home simva 20 and ASA 81."
+- "Anemia: Patient hematocrit trended down during hospitalization to 25. Labs were consistent with anemia of chronic inflammation. Hematocrit remained stable at 25."
+- "TRANSITIONAL: -monitor electrolytes (potassium, sodium) -monitor CBC for recovery of RBC count -add high-calorie supplements to meals, assistance with feedings"
+''',
+'''11. The relationship between the identified problem (pneumonia, hypernatremia, and altered mental status) and the subsequent treatment plan is that the patient was treated with antibiotics (vanc, zosyn, and azythromycin) for the pneumonia, and IV fluids (normal saline and LR) were administered to correct the hypernatremia and provide volume resuscitation.
+''',
+'''
+12. The major problems identified in this discharge summary are healthcare-associated pneumonia (HCAP) and hypernatremia. There is a causal relationship between these two problems in the sense that the patient's worsening mental status, which could be attributed to the infection and dementia, likely contributed to the development of hypernatremia.
+''',
+'''
+13. The patient is currently on the following medications:
+   - Acetaminophen 650 mg PO Q4H
+   - Citalopram 20 mg PO DAILY
+   - Senna 2 TAB PO HS
+   - Simvastatin 20 mg PO DAILY
+   - Docusate Sodium 100 mg PO BID
+   - Dulcolax ___X/WEEK (MO,TH) ___ and ___
+   - DuoNeb *NF* (ipratropium-albuterol) 0.5 mg-3 mg(2.5 mg base)/3 mL Inhalation q6hrs
+   - Metoprolol Tartrate 12.5 mg PO BID
+   - Glargine 10 Units Bedtime
+   - Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral TID:PRN pain
+   - Aspirin 81 mg PO DAILY
+   - Albuterol 0.083% Neb Soln 1 NEB IH Q6H:PRN sob/cough
+   - Ipratropium Bromide Neb 1 NEB IH Q6H:PRN cough/sob
+   - Levofloxacin 500 mg PO Q24H
+
+''',
+'''14. The diagnoses mentioned in the discharge summary and their sources are as follows:
+   - Healthcare-associated pneumonia (recent onsite visit)
+   - Hypernatremia (recent onsite visit)
+   - Alzheimer's dementia (past medical history)
+   - Hypertension (past medical history)
+''',
+'''
+15. The patient's medical history includes Alzheimer's dementia, diabetes mellitus type 2, hemiplegia, peripheral vascular disease, hypertension, coronary artery disease, non-insulin dependent diabetes mellitus (NIDDM), anemia, major depression without psychosis, osteoarthritis, urinary incontinence, pernicious anemia, and dysphagia. The patient also has a history of healthcare-associated pneumonia and hypernatremia.
+''',
+'''
+16. The medical conditions the patient had prior to admission are Alzheimer's dementia, diabetes mellitus type 2, anemia, major depression without psychosis, osteoarthritis, urinary incontinence, pernicious anemia, and dysphagia.
+''',
+'''
+17. The discharge summary does not specify the exact date of when the patient was transferred to the MICU. Therefore, the temporal information regarding the transfer to the MICU is not provided.
+''',
+'''
+18. The discharge summary does not explicitly mention the relationship between the patient's hypernatremia and dementia. However, it can be inferred that the worsening mental status related to the infection and dementia might have contributed to the development of hypernatremia, as mentioned earlier.
+''',
+'''
+19. The medications the patient was taking prior to admission are not explicitly mentioned in the given discharge summary.
+''',
+'''
+20. The abbreviation "HCAP" stands for healthcare-associated pneumonia in the patient's medical history.
+''',
+'''
+21. The patient's normalized diagnosis for their condition is healthcare-associated pneumonia, hypernatremia, and acute metabolic encephalopathy.
+''',
+'''
+22. The patient's initial vital signs on arrival at the OSH were: T: 99.1, HR: 90, RR: 20, and SpO2: 90% on room air.
+''',
+'''
+23. The classification of the patient's pneumonia is not specified in the given discharge summary.
+''',
+'''
+24. The discharge summary does not explicitly mention the relationship between the patient's hypokalemia and pneumonia. Therefore, the specific relationship between these two conditions is not provided.
+''',
+'''
+25. The patient's chief complaint, "AMS, pneumonia," can be rephrased in simpler terms as "confusion and lung infection."
+''',
+'''
+26. The attending physician is not specified in the given discharge summary.
+''',
+'''
+27. The patient's admission labs were as follows:
+   - WBC: 2.6
+   - K+: 3.0
+   - Na: 162
+   - Glucose: 489
+''',
+'''
+28. The code status and goals of care are not explicitly mentioned in the given discharge summary. Therefore, a summary of the patient's code status and goals of care cannot be provided.
+''',
+'''
+29. The medication not prescribed at discharge is d) Levofloxacin.
+''',
+'''
+30. The discharge summary does not explicitly state whether the patient's hypernatremia was corrected during their hospital stay.
+''']
+
+
+gpt4_6 = [
+'''1. The patient's primary diagnosis is breast cancer recurrence.
+''',
+'''
+2. The following sentences describe the diagnosis:
+- "Complaint: Breast cancer recurrence"
+- "History of Present Illness: Ms ___ is a ___ woman, who was originally diagnosed with carcinoma of the right breast on ___, which presented as an extremely locally advanced, large exophytic necrotic breast mass complicated by bleeding and repeated episodes of cellulitis and infection required repeating admissions to the hospital and IV antibiotics."
+- "She did well until early ___, when she was noted to have recurrent nodules on her chest wall."
+- "On ___, CT of the torso demonstrated the chest wall recurrence as well as progression of nodal disease and lung metastases."
+''',
+'''
+3. The comorbidities of the patient are:
+- Schizophrenia
+- Hypertension
+- Stage IIA colonic adenocarcinoma
+- History of high-grade SIL
+- Polypoid endometrial lesion
+- Hernia repair
+- Hemorrhoids s/p resection
+''',
+'''
+4. The following sentences describe the comorbidities:
+- "Past Medical History: 1. Stage IV metastatic, triple-negative, poorly differentiated invasive breast carcinoma 2. Schizophrenia (patient denies this diagnosis, treated by Dr. ___ at ___ in ___ 3. Hypertension 4. Stage IIA colonic adenocarcinoma (underwent right colectomy ___, CEA normal at the time of surgery) 5. History of high-grade SIL; patient declined follow-up 6. Polypoid endometrial lesion ___ patient declined follow-up 7. Hernia repair 8. Hemorrhoids s/p resection"
+''',
+'''
+5. The medications mentioned in the discharge summary are:
+- Amlodipine
+- Citalopram
+- Prochlorperazine
+- Docusate Sodium
+- Risperidone
+- Trihexyphenidyl
+- Acetaminophen
+- OxycoDONE (Immediate Release)
+- Cyclophosphamide
+''',
+'''
+6. The following sentences describe the medications:
+- "Medications on Admission: The Preadmission Medication list may be inaccurate and requires further investigation."
+- "Discharge Medications: 1. Amlodipine 5 mg PO DAILY 2. Citalopram 20 mg PO DAILY 3. Prochlorperazine 10 mg PO Q6H: PRN nausea 4. Docusate Sodium 100 mg PO BID 5. Risperidone 3 mg PO HS 6. Trihexyphenidyl 2 mg PO HS 7. Acetaminophen 1000 mg PO Q6H 8. OxycoDONE (Immediate Release) 5 mg PO Q6H: PRN breakthrough RX *oxycodone 5 mg 1 tablet(s) by mouth every six (6) hours Disp #*20 Tablet Refills:*09. Cyclophosphamide 25 mg PO DAILY"
+''',
+'''
+7. The labs mentioned in the discharge summary are:
+- WBC
+- RBC
+- Hgb
+- Hct
+- MCV
+- MCH
+- MCHC
+- RDW
+- Plt
+- Glucose
+- UreaN
+- Creat
+- Na
+- K
+- Cl
+- HCO3
+- AnGap
+- Calcium
+- Phos
+- Mg
+''',
+'''
+8. The following sentence describes the labs:
+- "Pertinent Results: ___ 11:25AM BLOOD WBC-2.7* RBC-2.66* Hgb-8.7* Hct-26.3* MCV
+''',
+'''
+
+9. The treatment plan for the patient is focused on palliative care and includes a resection of the chest wall recurrences. Additional details of the treatment plan are not provided in the given discharge summary.
+''',
+'''
+10. The note does not specifically mention sentences that describe the treatment plan beyond mentioning the palliative resection of the chest wall recurrences.
+''',
+'''
+
+11. The relationship between the identified problem (breast cancer recurrence) and the subsequent treatment plan is that the patient is undergoing a palliative resection of the chest wall recurrences as part of the treatment for breast cancer recurrence.
+''',
+'''
+12. No specific causal relationships between the two major problems (breast cancer recurrence and the need for wide excision of the chest wall recurrences) are mentioned in the discharge summary.
+''',
+'''
+13. The patient is currently on the following medications:
+- Amlodipine
+- Citalopram
+- Prochlorperazine
+- Docusate Sodium
+- Risperidone
+- Trihexyphenidyl
+- Acetaminophen
+- OxycoDONE (Immediate Release)
+- Cyclophosphamide
+''',
+'''
+14. Diagnoses mentioned in the discharge summary include:
+- Breast cancer recurrence
+- Schizophrenia
+- Hypertension
+- Stage IIA colonic adenocarcinoma
+- High-grade SIL
+- Polypoid endometrial lesion
+- Hernia repair
+- Hemorrhoids
+
+The diagnoses include both recent onsite visits (breast cancer recurrence) and past medical history (other diagnoses).
+''',
+'''
+15. The patient's medical history involves a diagnosis of stage IV metastatic, triple-negative, poorly differentiated invasive breast carcinoma with comorbidities including schizophrenia, hypertension, stage IIA colonic adenocarcinoma, high-grade SIL, polypoid endometrial lesion, hernia repair, and hemorrhoids.
+''',
+'''
+16. The patient's current medications are:
+- Amlodipine
+- Citalopram
+- Prochlorperazine
+- Docusate Sodium
+- Risperidone
+- Trihexyphenidyl
+- Acetaminophen
+- OxycoDONE (Immediate Release)
+- Cyclophosphamide
+''',
+'''
+17. There is no explicit mention of a relationship between the patient's breast cancer recurrence and her previous surgery (radical mastectomy) in the discharge summary.
+''',
+'''
+18. The key symptoms of the patient's breast cancer recurrence mentioned in the discharge summary are:
+- Recurrent nodules on the chest wall
+- Chest wall recurrence
+- Progression of nodal disease
+- Lung metastases
+''',
+'''
+19. The discharge summary does not provide information about the specific date when the patient was originally diagnosed with breast cancer.
+''',
+'''
+20. The normalized diagnosis for the patient's breast cancer recurrence is "Breast cancer recurrence."
+''',
+'''21. "CEA" stands for Carcinoembryonic Antigen in the patient's medical history.
+''',
+'''
+22. The discharge summary does not provide specific details of the patient's surgery.
+''',
+'''
+23. The discharge summary does not mention the patient's white blood cell count at discharge.
+''',
+'''
+24. Brief summary of the patient's hospital course: The patient underwent a palliative resection of chest wall breast cancer recurrences without complications. Pain was managed with medication, and the patient was transferred to the floor for post-operative management. The patient's condition remained stable, and she was discharged home with follow-up appointments and consideration for hospice care.
+''',
+'''
+25. The discharge summary does not explicitly state the patient's current level of consciousness.
+''',
+'''
+26. History of present illness in simpler terms: The patient, who had previously been diagnosed with advanced breast cancer, experienced recurrence of the cancer on the chest wall. Despite undergoing a radical mastectomy and receiving various treatments, the cancer returned. The patient presented for surgery to remove the chest wall recurrences.
+''',
+'''
+27. The discharge summary does not provide detailed features of the patient's breast cancer.
+''',
+'''
+28. Additional information about the patient's condition not mentioned in the discharge summary is not available.
+''',
+'''
+29. Yes, the patient was discharged to a home with a service facility.
+''',
+'''
+30. The discharge medication list does not include Ibuprofen. (d) Ibuprofen was not included in the patient's discharge medication list.
+''']
+
+gpt4_7 = [
+'''1. The patient's primary diagnosis is Hypotension.
+''',
+'''
+2. The following sentences describe the diagnosis: "History of Present Illness:___ with 3VD, DM, Alzheimer's who presented to ___ clinic today with two days of fatigue, malaise, dizziness, somnolence, and decreased PO intake. He was found by his PCP to be hypotensive with SBP 66 and sent to the ED."; "Hypotension: Patient's only localizing symptom is nausea without vomiting, diarrhea, fever or leukocytosis so infection is unlikely."; "Discharge Diagnosis: Primary diagnosis: Hypotension".
+''',
+'''
+3. The patient's comorbidities include Type 2 Diabetes, Hypertension, Hypercholesterolemia, Dementia (likely multi-infarct), Depression, Erectile Dysfunction, Gastroesophageal Reflux, Back Pain, Hearing Loss, Falls, known CAD-3VD, Chronic Renal Insufficiency, benign distal esophageal stricture, and a history of left carotid and groin stents, as well as a left nephrectomy for benign kidney tumor.
+''',
+'''
+4. The sentences that describe the comorbidities are contained within the "Past Medical History" and "Brief Hospital Course" sections, including "Past Medical History:TYPE 2 DIABETES  HYPERTENSION  HYPERCHOLESTEROLEMIA  DEMENTIA (likely multi-infarct)  DEPRESSION  ERECTILE DYSFUNCTION  GASTROESOPHAGEAL REFLUX  BACK PAIN  HEARING LOSS  FALLS  known CAD- 3VD, without intervention  Chronic Renal Insufficency- ___ to DM2 and HTN  benign distal esophageal stricture  s/p left carotid stent  s/p groin stent  s/p left nephrectomy for benign kidney tumor"
+''',
+'''
+5. The medications mentioned in the discharge summary include Atenolol, Citalopram, Clopidogrel (Plavix), Galantamine, Glipizide, Isosorbide Mononitrate, Lisinopril, Memantine (Namenda), Metformin, Nitroglycerin, Pioglitazone (Actos), Quetiapine (Seroquel), Ranitidine HCl, Simvastatin, Acetaminophen, Aspirin, and petrolatum ointment.
+''',
+'''
+6. The medications are described in the sections titled "Medications on Admission", "Discharge Medications", and also within the "Brief Hospital Course" sections.
+''',
+'''
+7. The labs mentioned in the discharge summary are creatinine, lipase, HCT, troponin, cortisol, LFT's, white count, Iron studies, B12, folate, and RPR.
+''',
+'''
+8. The labs are described in sections such as "History of Present Illness", "Brief Hospital Course", and "Anemia" within the discharge summary.
+''',
+'''
+9. The treatment plan included intravenous fluid hydration to address hypotension and fatigue, likely due to decreased oral intake over several days. Medication changes were made, including the suspension of Atenolol until consultation with the PCP. It is also indicated that the patient continue with a good diet and hydration at home, and that a pending thyroid function test be followed up at the next appointment with the doctor.
+''',
+'''
+10. The sentences that describe the treatment plan are contained within the "Brief Hospital Course", "Discharge Medications", and "Discharge Instructions" sections of the discharge summary.
+''',
+'''
+11. The identified problem was hypotension due to poor oral intake over the past few days, resulting in fatigue and acute renal failure. The treatment plan was to provide intravenous fluid hydration to rectify the hypotension and renal failure. Atenolol was also held due to hypotension and renal failure until the patient could see their primary care physician.
+''',
+'''
+12. The two major problems identified in this discharge summary are hypotension and acute renal failure. The hypotension seems to have caused the renal failure, as the patient's renal function improved with the resolution of the hypotension through fluid hydration.
+''',
+'''
+13. The patient is currently on the following medications: citalopram, clopidogrel, galantamine, glipizide, lisinopril, memantine, metformin, isosorbide mononitrate, nitroglycerin, Actos, quetiapine, ranitidine HCl, simvastatin, acetaminophen, aspirin, and petrolatum ointment for dry skin.
+''',
+'''
+14. The recent primary diagnosis from this visit is hypotension. Past medical history includes type 2 diabetes, hypertension, hypercholesterolemia, dementia, depression, erectile dysfunction, gastroesophageal reflux, back pain, hearing loss, falls, known CAD- 3VD, chronic renal insufficiency, benign distal esophageal stricture, and history of left carotid stent, groin stent, and left nephrectomy for benign kidney tumor.
+''',
+'''
+15. The primary diagnosis of the patient can be classified as a circulatory system disorder, specifically hypotension.
+''',
+'''
+16. The medication that was held until the patient sees their PCP is Atenolol.
+''',
+'''
+17. The discharge summary does not provide a specific date for the patient's last RPR test.
+''',
+'''
+18. The patient has a known 3 Vessel Disease (3VD) part of Coronary Artery Disease (CAD) and he is on medications including clopidogrel, aspirin, isosorbide, and an ACE inhibitor (lisinopril) as a part of his CAD management. Atenolol, a beta blocker also used for CAD, was held due to hypotension and renal failure.
+''',
+'''
+19. The patient's major medical conditions include type 2 diabetes, hypertension, hypercholesterolemia, dementia, depression, erectile dysfunction, gastroesophageal reflux, back pain, hearing loss, falls, known CAD- 3VD, and chronic renal insufficiency.
+''',
+'''
+20. In the context of the patient's medical history, "VD" stands for "Vessel Disease".
+''',
+'''
+21. The patient was admitted due to fatigue and altered mental status secondary to hypotension. This was believed to be due to inadequate oral fluid intake. Hypotension resulted in acute renal failure, which improved with intravenous fluid resuscitation. The patient's atenolol was held due to hypotension and renal failure until they could see their primary care physician.
+''',
+'''
+22. The discharge summary does not provide specific information on the patient's vital signs on admission and at discharge.
+''',
+'''
+23. The patient was brought to the hospital because they were feeling extremely tired and confused, which was caused by low blood pressure.
+''',
+'''
+24. The discharge summary does not mention the name of the attending physician.
+''',
+'''
+25. The patient's major surgical history includes a left carotid stent, groin stent, and left nephrectomy for a benign kidney tumor. No invasive procedures were mentioned during the hospital stay described in the discharge summary.
+''',
+'''
+26. The discharge summary does not mention the patient's lipase level.
+''',
+'''
+27. c. Atenolol was not restarted during the patient's hospital stay.
+''',
+'''
+28. The discharge summary does not mention any instance of the patient experiencing chest pain during their hospital stay.
+''',
+'''
+29. The standard medical term for the patient's diagnosis of 'multi-infarct dementia' is 'Vascular Dementia'.
+''',
+'''
+30. Given the patient's history of hypotension, renal failure, and multiple comorbidities including CAD-3VD, type 2 diabetes, dementia, and chronic renal insufficiency, potential complications to monitor during follow-up care could include recurrent hypotension, further renal function deterioration, worsening of CAD symptoms, and progression of dementia. Moreover, due to the hold on atenolol, monitoring blood pressure and heart rate would be important.
+''']
+
+gpt4_8 = [
+'''1. The patient's primary diagnosis is Deep Vein Thrombosis.
+''',
+'''
+2. The patient's comorbidities include Congestive Heart Failure (CHF), Atrial Fibrillation (Afib), severe advanced Alzheimer's dementia, osteoporosis, hypertension, irritable bowel syndrome, and malnutrition.
+''',
+'''
+3. Medications mentioned in the discharge summary include Metoprolol Succinate XL, Torsemide, Aspirin, Donepezil, Raloxifene, Multivitamins, Namenda XR (Memantine), Ascorbic Acid, Calcium Carbonate, Vitamin D, Fish Oil (Omega 3), Acetaminophen, Glycopyrrolate, and Hyoscyamine.
+''',
+'''
+4. Sentences describing medications include: "She was given 80 mEq of K and 60mg Enoxaparin Sodium.", "She was initially started on Lovenox for treatment but this was discontinued...", "Home metoprolol was continued at a decreased dose", and "Medications on Admission" and "Discharge Medications" sections.
+''',
+'''
+5. The standardized terminology used to describe the patient's condition include terms like CHF, Afib, Deep Vein Thrombosis, Hypertension, Alzheimer's dementia, osteoporosis, and malnutrition.
+''',
+'''
+6. Sentences describing medications include: "She was given 80 mEq of K and 60mg Enoxaparin Sodium.", "She was initially started on Lovenox for treatment but this was discontinued...", "Home metoprolol was continued at a decreased dose", and "Medications on Admission" and "Discharge Medications" sections.
+''',
+'''
+7. Labs mentioned in the discharge summary include Potassium (K), Creatinine (Cr), CBC, Urinalysis (UA), cTropnT, proBNP, blood glucose, Urea N, Sodium, Chloride, Total CO2, Anion Gap, and various other elements in the CBC panel.
+''',
+'''
+8. Sentences describing the labs include: "Labs were significant for : K 2.8 Cr 0.8CBC...", "UA: WBC 22, moderate leuks, negative nitrites", and "___ 12:00PM   cTropnT-0.03* proBNP-8428*" and various sentences in the "Pertinent Results" section.
+''',
+'''
+9. The treatment plan for the patient is to transition care to comfort-directed measures only and to pursue hospice services on discharge. The patient was initially started on Lovenox for treatment of DVT but this was discontinued. Home metoprolol was continued at a decreased dose for comfort.
+''',
+'''
+10. The patient was diagnosed with Deep Vein Thrombosis and several comorbidities including CHF and Afib. The treatment plan focused on transitioning the patient's care to comfort-directed measures and pursuing hospice services on discharge. The patient was initially started on Lovenox for DVT treatment, but this was later discontinued. Her other medications were continued for comfort.
+''',
+'''
+11. The identified problem of Deep Vein Thrombosis (DVT) led to an initial treatment with Lovenox, but it was discontinued, likely due to the patient's overall declining health and the decision to transition to comfort care.
+''',
+'''
+12. There's no clear causal relationship mentioned between the major problems of Deep Vein Thrombosis (DVT) and Congestive Heart Failure (CHF). They co-exist in this patient's case.
+''',
+'''
+13. The patient's current medications include Metoprolol Succinate XL, Torsemide, Aspirin, Donepezil, Raloxifene, Multivitamins, Namenda XR (Memantine), Ascorbic Acid, Calcium Carbonate, Vitamin D, Fish Oil (Omega 3), Acetaminophen, Glycopyrrolate, and Hyoscyamine.
+''',
+'''
+14. The patient's recent diagnosis from this visit is Deep Vein Thrombosis (DVT). Past medical history includes Congestive Heart Failure (CHF), Atrial Fibrillation (Afib), severe advanced Alzheimer's dementia, osteoporosis, hypertension, irritable bowel syndrome, and malnutrition.
+''',
+'''
+15. The patient, with multiple comorbidities, was diagnosed with Deep Vein Thrombosis and given comfort care measures, including medication adjustments, with the plan to pursue hospice services post-discharge.
+''',
+'''
+16. The patient's past medical history conditions include Congestive Heart Failure (CHF), Atrial Fibrillation (Afib), severe advanced Alzheimer's dementia, osteoporosis, hypertension, irritable bowel syndrome, and malnutrition.
+''',
+'''
+17. The discharge summary doesn't provide specific information regarding when the patient moved into the assisted living facility.
+''',
+'''
+18. There's no explicit mention of a relationship between the patient's CHF and pleural effusions in the discharge summary.
+''',
+'''
+19. The discharge summary doesn't mention any specific symptoms that the patient complained about.
+''',
+'''
+20. The patient's vital signs on admission aren't provided in the given discharge summary.
+''',
+'''
+21. The family history includes coronary artery disease in the patient's father, with the onset at age 60, and Alzheimer's disease in the patient's mother, with the onset at age 75.
+''',
+'''
+22. Yes, "Afib" can be normalized to "Atrial fibrillation".
+''',
+'''
+23. The primary diagnosis for this patient is Deep Vein Thrombosis (DVT).
+''',
+'''
+24. "TTE" stands for Transthoracic Echocardiogram.
+''',
+'''
+25. There is no mention of any falls before the patient presented to the Emergency Department.
+''',
+'''
+26. The patient was discharged on the following medications: Metoprolol Succinate XL, Torsemide, Aspirin, Donepezil, Raloxifene, Multivitamins, Namenda XR (Memantine), Ascorbic Acid, Calcium Carbonate, Vitamin D, Fish Oil (Omega 3), Acetaminophen, Glycopyrrolate, and Hyoscyamine.
+''',
+'''
+27. The patient's current activity status isn't specified in the discharge summary.
+''',
+'''
+28. The condition not mentioned in the patient's past medical history is (C) Diabetes.
+''',
+'''
+29. No, the patient was not placed on anticoagulation for the DVT.
+''',
+'''
+''']
+
+gpt4_9 = [
+'''1. The patient's primary diagnosis is mechanical lower back pain attributed to degenerative disease/arthritis of the lumbar spine (Lumbago).
+''',
+'''
+2. The diagnosis is described in these sentences: "___ y/o M with h/o CAD, atrial flutter, asthma, CHF and ESRD on HD who presented with 4 days of gradual onset back pain radiating to the back with difficulty walking."; "Lumbago (mechanical lower back pain attributed to degenerative disease/arthritis of the lumbar spine)."
+''',
+'''
+3. The patient's comorbidities include End Stage Renal Disease (ESRD) on hemodialysis (HD), Coronary Artery Disease (CAD), history of atrial flutter, Hypertension (HTN), and Chronic Obstructive Pulmonary Disease (COPD).
+''',
+'''
+4. The comorbidities are described in these sentences: "___ y/o M with h/o CAD, atrial flutter, asthma, CHF and ESRD on HD who presented with 4 days of gradual onset back pain radiating to the back with difficulty walking."; "ESRD - continued HD."; "CAD/HTN - continued BB, ASA."; "h/o atrial flutter - in NSR."
+''',
+'''
+5. The medications mentioned in the discharge summary are Metoprolol Succinate (Toprol XL), Aspirin, Omeprazole, Calcium Acetate (Phoslo), Sevelamer HCl (Renagel), Docusate Sodium, and Percocet.
+''',
+'''
+6. Medications are described in these sentences: "Medications on Admission: Toprol XL 50 mg Daily, ASA 81 mg PO Daily, Omeprazole 20 mg PO Daily, Phoslo 667 mg PO TID, Docusate, Renagel 1 tab daily."; "Discharge Medications: Metoprolol Succinate 50 mg, Aspirin 81 mg, Omeprazole 20 mg, Calcium Acetate 667 mg, Sevelamer HCl 800 mg, Docusate Sodium 100 mg, Percocet."
+''',
+'''
+7. There are no specific lab tests mentioned in the discharge summary.
+''',
+'''
+8. Not applicable, as there are no specific labs described in the note.
+''',
+'''
+9. The treatment plan for the patient included continued hemodialysis for ESRD, continuation of current medications for CAD, HTN, and atrial flutter, and addition of Percocet as needed for pain management.
+''',
+'''
+10. The treatment plan is described in these sentences: "Back pain - appears to be musculoskeletal in nature, no red flags such as fecal incontinence, urinary retention, neurological exam findings. Xray negative for fracture. Treated with hot packs and prn percocet."; "ESRD - continued HD."; "CAD/HTN - continued BB, ASA."; "h/o atrial flutter - in NSR."; "No changes were made to your home medications, we have only added percocet as needed for pain, as well as recommending the use of hot packs as needed to the area of pain."
+''',
+'''
+11. The patient was diagnosed with mechanical lower back pain due to lumbar spine degeneration. The treatment plan was formulated to address this problem, which included hot packs and Percocet for pain management. In addition, the patient's comorbid conditions such as ESRD, CAD, and atrial flutter were managed with continued hemodialysis and prescribed medications.
+''',
+'''
+12. The discharge summary primarily identifies the patient's lower back pain and the comorbid conditions like ESRD, CAD, atrial flutter, HTN, and COPD. While all these conditions contribute to the overall health of the patient, there is no direct causal relationship indicated between these in the discharge summary.
+''',
+'''
+13. The patient's current medications include Metoprolol Succinate, Aspirin, Omeprazole, Calcium Acetate, Sevelamer HCl, Docusate Sodium, and as-needed Percocet for pain management.
+''',
+'''
+14. The patient's diagnoses include a recent diagnosis of mechanical lower back pain (Lumbago) during the onsite visit. The patient's past medical history includes End Stage Renal Disease (ESRD) on hemodialysis, Coronary Artery Disease (CAD), history of atrial flutter, Hypertension (HTN), and Chronic Obstructive Pulmonary Disease (COPD).
+''',
+'''
+15. The patient's chief complaint is back pain and difficulty walking due to the pain.
+''',
+'''
+16. During the hospital stay, it was determined that the patient's back pain appeared to be musculoskeletal in nature with no red flags such as fecal incontinence, urinary retention, or significant neurological exam findings. The back pain was managed with hot packs and Percocet. The patient's other medical conditions like ESRD, CAD, and atrial flutter were also managed appropriately.
+''',
+'''
+17. The patient's medical conditions mentioned in the summary include mechanical lower back pain, End Stage Renal Disease (ESRD) on hemodialysis, Coronary Artery Disease (CAD), history of atrial flutter, Hypertension (HTN), Chronic Obstructive Pulmonary Disease (COPD), and large scrotal/R inguinal hernia.
+''',
+'''
+18. The patient first presented with back pain four days before being admitted to the hospital.
+''',
+'''
+19. There is no direct relationship indicated in the discharge summary between the patient's Coronary Artery Disease (CAD) and his back pain.
+''',
+'''
+20. The patient, a male with a history of heart disease, irregular heart rhythm, asthma, heart failure, and severe kidney disease, came to the hospital because he had been experiencing back pain for four days. This pain made it difficult for him to walk, and he had never felt this kind of pain before. The pain was worse when he moved, but he didn't have any other symptoms like numbness or weakness in his legs. After not being able to walk around a soda machine because of his back pain, the manager of his building called an ambulance to bring him to the hospital.
+''',
+'''
+21. The keywords related to the patient's diagnosis of lumbago include "back pain", "difficulty walking", "pain exacerbated by movement", "musculoskeletal pain", "moderate arthritis of the lumbar spine", and "no neurological deficits".
+''',
+'''
+22. The patient's condition can be standardized as "Lumbago due to degenerative arthritis of the lumbar spine."
+''',
+'''
+23. ESRD stands for End Stage Renal Disease.
+''',
+'''
+24. The key features of the patient's physical exam include regular heart sounds, non-distended abdomen, no edema or clubbing of extremities, no rashes or jaundice on skin, and intact sensation in upper and lower extremities. There is also noted guarding of straight leg due to pain in the right lower back.
+''',
+'''
+25. The medications listed in the discharge summary include Metoprolol Succinate, Aspirin, Omeprazole, Calcium Acetate, Sevelamer HCl, Docusate Sodium, and Percocet for pain management.
+''',
+'''
+26. The patient's discharge condition is described as stable.
+''',
+'''
+27. c) ESRD - Considering the patient's current presentation, End Stage Renal Disease is the most concerning as it significantly affects his overall health and has implications for pain management.
+''',
+'''
+28. Further evaluation of the patient's back pain could consider an MRI of the lumbar spine to better evaluate the soft tissue structures and any possible nerve involvement.
+''',
+'''
+29. Yes, a herniated disc was ruled out as a cause of the patient's back pain as the patient denies any history of herniated discs and there is no mention of this in the physical examination findings.
+''',
+'''
+30. Yes, a family history of stroke is mentioned in the summary. Both the patient's father and brother died from strokes at an unspecified age.
+'''
+]
+
+gpt4_result = [gpt4_0, gpt4_1, gpt4_2, gpt4_3, gpt4_4, gpt4_5, gpt4_6, gpt4_7, gpt4_8, gpt4_9]
+
+gpt4 = gpt4_result[note_number-1][index]
     
 st.write("**GPT-4**")
 st.warning(gpt4)
