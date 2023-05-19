@@ -36,7 +36,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
    
 st.info(note)
 
-instruction = st.selectbox("Select your instruction", q_list)
+instruction = st.selectbox("Select your instruction. :smile:", q_list)
 
 def find_loc(string, list):
     for i in range(len(list)):
