@@ -6,7 +6,7 @@ import streamlit as st
 
 
 st.title("GPT Prompt and Answers demo")
-st.write("Yue liu, May 2023")
+st.write("Yue Liu, May 2023")
 
 st.write(
     "In order to prevent privacy leakage of the data we trained on, we fix the clinical notes and instructions that you can test. Please choose each of the notes and instructions!"
