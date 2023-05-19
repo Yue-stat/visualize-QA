@@ -5,24 +5,9 @@ import pandas as pd
 import streamlit as st
 
 
-st.button('Click me')
-st.checkbox('I agree')
-st.radio('Pick one', ['cats', 'dogs'])
-st.selectbox('Pick one', ['cats', 'dogs'])
-st.multiselect('Buy', ['milk', 'apples', 'potatoes'])
-st.slider('Pick a number', 0, 100)
-st.select_slider('Pick a size', ['S', 'M', 'L'])
-st.text_input('First name')
-st.number_input('Pick a number', 0, 10)
-st.text_area('Text to translate')
-st.date_input('Your birthday')
-st.time_input('Meeting time')
-
-
-
-
-
 st.title("GPT Prompt and Answers demo")
+st.write("Yue liu, May 2023")
+
 st.write(
     "In order to prevent privacy leakage of the data we trained on, we fix the clinical notes and instructions that you can test. Please choose each of the notes and instructions!"
 )
@@ -37,8 +22,8 @@ note_number = st.slider(
 )
 
 mtsamples = pd.read_json("tmp5(4).json")
-masked = mtsamples["data"][0]
-note = masked["paragraphs"][0]['context']
+masked = mtsamples["data"][note_number-1]
+note = masked["paragraphs"][note_number-1]['context']
 
 q_list = []
 for k, qa in enumerate(masked["paragraphs"][0]['qas']):
