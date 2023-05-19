@@ -26,7 +26,7 @@ st.write("You selected", f"{note_number}")
 
 mtsamples = pd.read_json("tmp5(4).json")
 masked = mtsamples["data"][note_number-1]
-note = masked["paragraphs"][note_number-1]['context']
+note = masked["paragraphs"][0]['context']
 
 q_list = []
 for k, qa in enumerate(masked["paragraphs"][0]['qas']):
