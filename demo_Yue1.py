@@ -6,7 +6,6 @@ import streamlit as st
 
 
 st.button('Click me')
-st.experimental_data_editor('Edit data', data)
 st.checkbox('I agree')
 st.radio('Pick one', ['cats', 'dogs'])
 st.selectbox('Pick one', ['cats', 'dogs'])
@@ -18,10 +17,7 @@ st.number_input('Pick a number', 0, 10)
 st.text_area('Text to translate')
 st.date_input('Your birthday')
 st.time_input('Meeting time')
-st.file_uploader('Upload a CSV')
-st.download_button('Download file', data)
-st.camera_input("Take a picture")
-st.color_picker('Pick a color')
+
 
 
 
