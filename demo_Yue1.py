@@ -18,7 +18,7 @@ if "rn" not in st.session_state:
     st.session_state["rn"] = random.randint(1, 10)
 # rand_idx = random.randint(1, 106)
 note_number = st.slider(
-    "Select the clinical note. ", 1, 10, st.session_state["rn"]
+    "Select the clinical note. :smile:", 1, 10, st.session_state["rn"]
 )
 
 
