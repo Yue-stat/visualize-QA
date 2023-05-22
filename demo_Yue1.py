@@ -60,7 +60,7 @@ st.write("\n")
 st.markdown("""---""")
 st.write("\n")
 
-st.write("**Azure**")
+st.write("**ChatGPT** (API from Azure)")
 st.success(Azure)
 
 
