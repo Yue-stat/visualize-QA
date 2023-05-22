@@ -1211,6 +1211,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     
     with col1:
       st.write(qa['question'])
+      st.markdown("""---""")
           
           
     with col2:
@@ -1218,7 +1219,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.success(Azure)
       st.write("**GPT-4**")
       st.warning(gpt4)
-   st.markdown("""---""")
+      st.markdown("""---""")
   
   
 
