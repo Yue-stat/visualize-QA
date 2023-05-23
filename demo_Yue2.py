@@ -78,11 +78,11 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.markdown("""---""")
   
     with col3:
-        globals()["A" + str(30*(note_number-1)+k)] = st.radio(
+        A60 = st.radio(
             "Choose an answer 👇",
             ("ChatGPT", "GPT-4"),
     )
-        eval("A" + str(30*(note_number-1)+k))
-        A[note_number-1][k] = eval("A" + str(30*(note_number-1)+k))
+        A60
+        A[note_number-1][k] = A60
   
 
