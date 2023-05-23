@@ -77,7 +77,7 @@ gpt4 = "To add"
 with open('gpt4_result.json') as json_file:
     gpt4_result = json.load(json_file)
 
-A = [[0 for i in range(30)] for j in range(10)]
+A = [[" " for i in range(30)] for j in range(10)]
 
 st.title("GPT Prompt and Answers demo")
 st.write("Yue Liu, May 2023")
@@ -168,10 +168,12 @@ if submit:
     
 #    with open('feedback.json') as json_file:
  #       feedback = json.load(json_file)
-    
+
     feedback = {"username": username, "result": A}
+    
     with open('feedback.json') as json_file:
         data = json.load(json_file)
+        
     data.append(feedback)
     data = str(data)
     st.write(data)
