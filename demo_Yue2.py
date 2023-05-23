@@ -11,6 +11,8 @@ gpt4 = "To add"
 with open('gpt4_result.json') as json_file:
     gpt4_result = json.load(json_file)
 
+A = [[0 for i in range(30)] for j in range(10)]
+
 st.title("GPT Prompt and Answers demo")
 st.write("Yue Liu, May 2023")
 
@@ -76,7 +78,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.markdown("""---""")
   
     with col3:
-        add_radio = st.radio(
+        A[note_number-1][k] = st.radio(
             "Choose an answer",
             ("ChatGPT", "GPT-4")
         )
