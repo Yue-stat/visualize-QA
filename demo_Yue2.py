@@ -1198,6 +1198,12 @@ with col1:
 with col2:
   st.write("Answers")
   
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose an answer",
+        ("ChatGPT", "GPT-4")
+    )
+      
 q_list = []
 for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     
