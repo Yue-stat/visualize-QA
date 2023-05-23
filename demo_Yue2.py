@@ -175,7 +175,7 @@ if submit:
     data.append(feedback)
     data = str(data)
     st.write(data)
-    push_to_repo_branch("feedback.json", data, "Yue-stat/visualize-QA", "main", "Yue-stat",token)
+    push_to_repo_branch("feedback.json", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
     st.write("Sumbitted!")
 else: 
