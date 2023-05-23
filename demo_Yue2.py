@@ -1158,6 +1158,8 @@ gpt4_9 = [
 
 gpt4_result = [gpt4_0, gpt4_1, gpt4_2, gpt4_3, gpt4_4, gpt4_5, gpt4_6, gpt4_7, gpt4_8, gpt4_9]
 
+with open('gpt4_result.json', 'w') as outfile:
+   json.dump(str, outfile)
 
 st.title("GPT Prompt and Answers demo")
 st.write("Yue Liu, May 2023")
