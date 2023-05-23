@@ -5,7 +5,9 @@ import pandas as pd
 import streamlit as st
 import json
 
-
+for i in range(400):
+    globals()["A" + str(i)] = ""
+    
 gpt4 = "To add"
 
 with open('gpt4_result.json') as json_file:
@@ -78,11 +80,10 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.markdown("""---""")
   
     with col3:
-        A60 = st.radio(
+        globals()["A" + str(30*(note_number-1)+k)] = st.radio(
             "Choose an answer 👇",
             ("ChatGPT", "GPT-4"),
     )
-        A60
-        A[note_number-1][k] = A60
+        globals()["A" + str(30*(note_number-1)+k)]
   
 
