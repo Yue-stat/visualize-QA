@@ -114,6 +114,10 @@ if submit:
     df = load_data(st.secrets["public_gsheets_url"])
     df
     
+    df = pd.DataFrame(A)
+    df
+    df.to_csv(csv_url)
+    
     with open('feedback.json', 'w') as outfile:
         json.dump(feedback, outfile)
         st.write(outfile)
