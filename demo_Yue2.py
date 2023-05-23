@@ -83,7 +83,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         A60 = st.radio(
         "Set label visibility 👇",
         ["visible", "hidden", "collapsed"],
-        key=30*(note_number-1)+k),
+        key=30*(note_number-1)+k,
         )
         
         A60
