@@ -102,10 +102,10 @@ if submit:
         username = 'anonymous-' + ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
     st.write("Your username is ", f"{username}")
     
-    with open('feedback.json') as json_file:
-        feedback = json.load(json_file)
+#    with open('feedback.json') as json_file:
+ #       feedback = json.load(json_file)
     
-    feedback.append({"username": username, "result": A})
+    feedback = {"username": username, "result": A}
 
     with open('feedback.json', 'w') as outfile:
         json.dump(feedback, outfile)
