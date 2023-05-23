@@ -12,18 +12,6 @@ import datetime
 
 
 def push_to_repo_branch(gitHubFileName, data, repo_slug, branch, user, token):
-    '''
-    Push file update to GitHub repo
-    
-    :param gitHubFileName: the name of the file in the repo
-    :param fileName: the name of the file on the local branch
-    :param repo_slug: the github repo slug, i.e. username/repo
-    :param branch: the name of the branch to push the file to
-    :param user: github username
-    :param token: github user token
-    :return None
-    :raises Exception: if file with the specified name cannot be found in the repo
-    '''
     
     message = "Automated update " + str(datetime.datetime.now())
     path = "https://api.github.com/repos/%s/branches/%s" % (repo_slug, branch)
