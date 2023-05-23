@@ -117,6 +117,8 @@ with col1:
           
 with col2:
   st.write("Answers")
+with col3:
+    st.write("Select your preference 👇. The default is ChatGPT")
   
 
       
