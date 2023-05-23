@@ -107,8 +107,12 @@ if submit:
     
     feedback = {"username": username, "result": A}
 
-    df = pd.read_csv(st.secrets["public_gsheets_url"])
-    df
+    def load_data(sheets_url):
+        csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
+    return pd.read_csv(csv_url)
+
+    df = load_data(st.secrets["public_gsheets_url"])
+    
     with open('feedback.json', 'w') as outfile:
         json.dump(feedback, outfile)
         st.write(outfile)
