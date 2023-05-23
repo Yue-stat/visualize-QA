@@ -171,13 +171,18 @@ if submit:
 
     feedback = {"username": username, "result": A}
     
-    with open('feedback.json') as json_file:
-        data = json.load(json_file)
+    with open('data.txt') as f:
+        lines = f.readlines()
+
+    lines = lines + "\n\n" + str(feedback)
+
+    # with open('feedback.json') as json_file:
+    #     data = json.load(json_file)
         
-    data.append(feedback)
-    data = str(data)
-    st.write(data)
-    push_to_repo_branch("feedback.json", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
+    # data.append(feedback)
+    # data = str(data)
+    # st.write(data)
+    push_to_repo_branch("feedback.txt", lines, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
     st.write("Sumbitted!")
 else: 
