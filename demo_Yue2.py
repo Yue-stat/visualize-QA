@@ -62,7 +62,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     Azure = Azure[2:]
     
     gpt4 = gpt4_result[note_number-1][k]
-    col1, col2, col3 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
       st.write(qa['question'])
       st.markdown("""---""")
