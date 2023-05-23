@@ -109,7 +109,7 @@ st.info(note)
 st.markdown("""---""")
 
 
-col1, col2, col3 = st.columns([1.5,2,1])
+col1, col2, col3 = st.columns([1.5,2,0.7])
 
 with col1:
   st.write("Questions")
@@ -132,7 +132,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     Azure = Azure[2:]
     
     gpt4 = gpt4_result[note_number-1][k]
-    col1, col2, col3 = st.columns([1.5,2,1])
+    col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
       st.write(qa['question'])
       st.markdown("""---""")
@@ -147,7 +147,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
   
     with col3:
         A60 = st.radio(
-        "Select your preference 👇",
+        "Select: ",
         ["ChatGPT", "GPT-4"],
         key=30*(note_number-1)+k,
         )
