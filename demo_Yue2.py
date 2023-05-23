@@ -99,10 +99,11 @@ import string
 submit =  st.button('Submit')
 if submit:
     if username == '':
-        username = 'anonymous-'.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
+        username = 'anonymous-' + ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
     st.write("Your username is ", f"{username}")
     with open(username + '.json', 'w') as outfile:
         json.dump(A, outfile)
+        st.write(outfile)
     st.write("Sumbitted!")
 else: 
     st.write("Not submitted!")
