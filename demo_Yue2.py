@@ -171,7 +171,7 @@ if submit:
 
     feedback = {"username": username, "result": A}
     
-    with open('data.txt') as f:
+    with open('feedback.txt') as f:
         lines = f.readlines()
 
     lines = lines + "\n\n" + str(feedback)
