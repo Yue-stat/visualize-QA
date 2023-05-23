@@ -173,6 +173,7 @@ if submit:
     
     with open('feedback.txt') as f:
         lines = f.readlines()
+    lines
 
     lines.append(feedback)
 
@@ -183,7 +184,7 @@ if submit:
     # data = str(data)
     # st.write(data)
     data = str(lines)
-    # st.write(data)
+    st.write(data)
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
     st.write("Sumbitted!")
