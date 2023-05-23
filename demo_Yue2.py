@@ -75,10 +75,10 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.warning(gpt4)
       st.markdown("""---""")
   
-   with col3:
-    add_radio = st.radio(
-        "Choose an answer",
-        ("ChatGPT", "GPT-4")
-    )
+    with col3:
+        add_radio = st.radio(
+            "Choose an answer",
+            ("ChatGPT", "GPT-4")
+        )
   
 
