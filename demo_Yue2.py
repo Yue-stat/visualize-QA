@@ -174,7 +174,7 @@ if submit:
     with open('feedback.txt') as f:
         lines = f.readlines()
 
-    lines = lines + "\n\n" + str(feedback)
+    lines.append(feedback)
 
     # with open('feedback.json') as json_file:
     #     data = json.load(json_file)
