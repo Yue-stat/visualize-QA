@@ -116,6 +116,8 @@ if submit:
     
     df = pd.DataFrame(A)
     df
+    sheets_url = st.secrets["public_gsheets_url"]
+    csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
     df.to_csv(csv_url)
     
     with open('feedback.json', 'w') as outfile:
