@@ -174,7 +174,7 @@ if submit:
     feedback = {"username": username, "result": A}
     
     st.write("Your answer is ")
-    st.write(A)
+    st.write(pd.DataFrame(A))
     
     
     with open('feedback.txt') as f:
