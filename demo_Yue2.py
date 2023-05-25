@@ -77,7 +77,7 @@ gpt4 = "To add"
 with open('gpt4_result.json') as json_file:
     gpt4_result = json.load(json_file)
 
-A = [[" " for i in range(30)] for j in range(10)]
+A = [["" for i in range(30)] for j in range(10)]
 
 st.title("GPT Prompt and Answers demo")
 st.write("Yue Liu, May 2023")
