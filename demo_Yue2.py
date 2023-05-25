@@ -173,6 +173,10 @@ if submit:
 
     feedback = {"username": username, "result": A}
     
+    st.write("Your answer is ")
+    st.write(A)
+    
+    
     with open('feedback.txt') as f:
         lines = f.readlines()
     # lines
