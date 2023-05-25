@@ -192,7 +192,7 @@ if submit:
     data = str(lines)
     # st.write(data)
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
-    push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
+    # push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
     st.write("Sumbitted!")
 else: 
