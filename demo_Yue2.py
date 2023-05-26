@@ -220,5 +220,7 @@ else:
     
 st.markdown("<a href='#linkto_top'>Link to top: re-select note</a>", unsafe_allow_html=True)
 
-
+with st.sidebar:
+    st.markdown("<a href='#linkto_top'>Link to note</a>", unsafe_allow_html=True)
+    
 
