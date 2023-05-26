@@ -180,7 +180,7 @@ if submit:
       #   lines = f.readlines()
     
     with open('feedback.txt', 'r') as f:
-        str = f.read()
+        old_str = f.read()
         f.close()
 
     def dict_to_str(dict):
@@ -203,7 +203,7 @@ if submit:
         output_str += '}'
         return output_str
 
-    data = str + dict_to_str(feedback)
+    data = old_str + dict_to_str(feedback)
     # st.write(data)
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     # push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
