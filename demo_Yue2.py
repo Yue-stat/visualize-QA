@@ -78,7 +78,7 @@ with open('gpt4_result.json') as json_file:
 
 A = [["" for i in range(30)] for j in range(10)]
 
-st.title("GPT Prompt and Answers demo")
+st.title("GPT Prompt and Answers Demo")
 st.write("Yue Liu, May 2023")
 
 st.write(
@@ -97,7 +97,7 @@ note_number = st.slider(
 
 st.write("You selected", f"{note_number}")
 
-mtsamples = pd.read_json("demo.json")
+mtsamples = pd.read_json("demo0526.json")
 
 masked = mtsamples["data"][note_number-1]
 
