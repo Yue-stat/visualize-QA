@@ -226,5 +226,9 @@ st.markdown("<a href='#linkto_top'>Link to top: re-select note</a>", unsafe_allo
 with st.sidebar:
     st.markdown("<a href='#linkto_top'>Link to note</a>", unsafe_allow_html=True)
     st.markdown("<a href='#linkto_qa'>Link to QAs</a>", unsafe_allow_html=True)
+    st.markdown("""---""")
+    st.info(note)
+
+
     
 
