@@ -139,7 +139,9 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       Azure = Azure + "; " + answer['text']
     Azure = Azure[2:]
     
-    gpt4 = gpt4_result[note_number-1][k]
+    if k <= 7:
+        gpt4 = gpt4_result[note_number-1][k]
+        
     col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
       st.write(qa['question'])
