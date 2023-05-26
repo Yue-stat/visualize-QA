@@ -113,6 +113,9 @@ st.info(note)
 
 st.markdown("""---""")
 
+# hidden div with anchor
+st.markdown("<div id='linkto_qa'></div>", unsafe_allow_html=True) 
+
 
 col1, col2, col3 = st.columns([1.5,2,0.7])
 
@@ -222,5 +225,6 @@ st.markdown("<a href='#linkto_top'>Link to top: re-select note</a>", unsafe_allo
 
 with st.sidebar:
     st.markdown("<a href='#linkto_top'>Link to note</a>", unsafe_allow_html=True)
+    st.markdown("<a href='#linkto_qa'>Link to QAs</a>", unsafe_allow_html=True)
     
 
