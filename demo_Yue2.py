@@ -69,8 +69,7 @@ def push_to_repo_branch(gitHubFileName, data, repo_slug, branch, user, token):
         print (rPut.text)
         print (e)
         
-for i in range(400):
-    globals()["A" + str(i)] = ""
+
     
 gpt4 = "To add"
 
@@ -177,19 +176,34 @@ if submit:
     st.write(pd.DataFrame(A))
     
     
-    with open('feedback.txt') as f:
-        lines = f.readlines()
-    # lines
+    # with open('feedback.txt') as f:
+      #   lines = f.readlines()
+    
+    with open('feedback.txt', 'r') as f:
+        str = f.read()
+        f.close()
 
-    lines.append(feedback)
+    def dict_to_str(dict):
+        output_str = '{'
+        for key, value in dict.items():
+            output_str += '"' + key + '": '
+            if type(value) == str:
+                output_str += '"' + value + '", '
+            elif type(value) == list:
+                output_str += '['
+                for i in range(len(value)):
+                    output_str += '['
+                    for j in range(len(value[i])):
+                        output_str += '"' + value[i][j] + '", '
+                    output_str = output_str[:-2]
+                    output_str += '], '
+                output_str = output_str[:-2]
+                output_str += '], '
+        output_str = output_str[:-2]
+        output_str += '}'
+        return output_str
 
-    # with open('feedback.json') as json_file:
-    #     data = json.load(json_file)
-        
-    # data.append(feedback)
-    # data = str(data)
-    # st.write(data)
-    data = str(lines)
+    data = str + dict_to_str(feedback)
     # st.write(data)
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     # push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
