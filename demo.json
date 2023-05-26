@@ -128,84 +128,44 @@
               ]
             },
             {
-              "id": 9,
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
-              "answers": [
-                {
-                  "answer_start": 585,
-                  "text": "She was given a prescription for oxycodone 5mg ___ tabs TID as needed for pain."
-                },
-                {
-                  "answer_start": 607,
-                  "text": "She was also prescribed ibuprofen 800 mg PO TID to reduce inflammation and instructed to take this medication with food and water."
-                },
-                {
-                  "answer_start": 616,
-                  "text": "Post-procedure follow up to be arranged by ___, interventional radiology ___."
-                },
-                {
-                  "answer_start": 625,
-                  "text": "Patient was discharged with a prescription for oral lactulose."
-                },
-                {
-                  "answer_start": 636,
-                  "text": "Follow up as per below."
-                },
-                {
-                  "answer_start": 642,
-                  "text": "If you develop increasing pain, fevers, chills, night sweats, increased swelling in your right groin, chest pain or shortness of breath please call your primary care provider or go to the emergency department for evaluation."
-                }
-              ]
-            },
-            {
-              "id": 10,
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "answers": [
-                {
-                  "answer_start": 585,
-                  "text": "She was given a prescription for oxycodone 5mg ___ tabs TID as needed for pain."
-                },
-                {
-                  "answer_start": 607,
-                  "text": "She was also prescribed ibuprofen 800 mg PO TID to reduce inflammation and instructed to take this medication with food and water."
-                },
-                {
-                  "answer_start": 616,
-                  "text": "Post-procedure follow up to be arranged by ___, interventional radiology ___."
-                },
-                {
-                  "answer_start": 625,
-                  "text": "Patient was discharged with a prescription for oral lactulose."
-                },
-                {
-                  "answer_start": 636,
-                  "text": "Follow up as per below."
-                },
-                {
-                  "answer_start": 642,
-                  "text": "If you develop increasing pain, fevers, chills, night sweats, increased swelling in your right groin, chest pain or shortness of breath please call your primary care provider or go to the emergency department for evaluation."
-                }
-              ]
-            },
-            {
               "answers": [
                 {
                   "answer_start": 0,
-                  "text": "The identified problem is the right groin pain caused by a pseudoaneurysm, and the subsequent treatment plan was a thrombin injection to the pseudoaneurysm."
+                  "text": "This is a discharge summary of a female patient who presented with right groin pain and swelling after uterine artery fibroid embolization."
                 }
               ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
-                  "answer_start": 0,
-                  "text": "There is no clear causal relationship between the two major problems identified in this discharge summary, which are the pseudoaneurysm and rheumatoid arthritis."
+                  "answer_start": 340,
+                  "text": "Patient presented with psuedoaneurysm  confirmed by ultrasound that was secondary to her recent uterine  fibroid embolization on ___. On ___ patient underwent  psuedoaneurysm thrombin injection. Ultrasound on ___ indicated  pseudoaneurysm had been thrombosed with remaining femoral artery  patent."
                 }
               ],
-              "id": "12",
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              "id": "Content extraction",
+              "question": "(Text Classification) Which sentences in the note describe the history treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": -1,
+                  "text": "Patient was discharged with medications including prednisone, folate, methotrexate, colace, senna, lactulose, ibuprofen, and oxycodone. Post-procedure follow up to be arranged by interventional radiology."
+                }
+              ],
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 798,
+                  "text": "Post-procedure follow up to be arranged by ___,  interventional radiology ___."
+                }
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -530,52 +490,104 @@
               ]
             },
             {
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
-              "id": "9",
               "answers": [
                 {
-                  "answer_start": 1261,
-                  "text": "IVC filter placement, no anticoagulation, and discharge with previous medication."
+                  "answer_start": 436,
+                  "text": "Ms. ___ is a ___ PMHx advanced Alzheimer's dementia, chronic  HCV, autoimmune hepatitis, and AFib who presents from her SNF  for RLE DVT."
+                },
+                {
+                  "answer_start": 703,
+                  "text": "Patient admitted for evaluation of acute RLE DVT.  Due to high  bleeding risk, IVC filter was placed and patient will not be  anti coagulated.  Please resume all previous medications"
+                }
+              ],
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 579,
+                  "text": "Ms. ___ is a ___ PMHx advanced Alzheimer's dementia, chronic  HCV, autoimmune hepatitis, and AFib who presents from her SNF  for RLE DVT.  # DVT.  Diagnosed by LENIs at ___.  Patient started on Lovenox  in ED for anticoagulation.  However, given intracranial lesion  which is higher risk for bleeding, will discuss utility of IVC  filter placement with HCP.  After discussion with HCP ___  ___, decision made to place IVC filter and NOT anti  coagulate given the patient's high risk for bleeding."
+                },
+                {
+                  "answer_start": 628,
+                  "text": "She went  for uncomplicated IVC filter placement on ___.  She will not  be anti coagulated going forward."
+                },
+                {
+                  "answer_start": 1205,
+                  "text": "Recently seen on brain MRI in ___.   Patient at the time was placed on Keppra for seizure  prophylaxis.  It is high risk for bleeding and that is partly  why IVC filter placement was decided - Continued Keppra 500 mg BID  # A. fib.  Recent diagnosis of paroxysmal AFib.  Despite  CHADSVASC score of 4 warranting anticoagulation, systemic  anticoagulation deferred due to age, risk of fall, and atypical  meningioma at high risk for bleeding. - No rate-control"
+                },
+                {
+                  "answer_start": 1351,
+                  "text": "Despite  CHADSVASC score of 4 warranting anticoagulation, systemic  anticoagulation deferred due to age, risk of fall, and atypical  meningioma at high risk for bleeding. - No rate-control"
+                },
+                {
+                  "answer_start": 1497,
+                  "text": "Atypical meningioma. Recently seen on brain MRI in ___.   Patient at the time was placed on Keppra for seizure  prophylaxis.  It is high risk for bleeding and that is partly  why IVC filter placement was decided - Continued Keppra 500 mg BID"
+                },
+                {
+                  "answer_start": 1527,
+                  "text": "Recently seen on brain MRI in ___."
+                },
+                {
+                  "answer_start": 1611,
+                  "text": "A. fib."
+                },
+                {
+                  "answer_start": 1621,
+                  "text": "Recent diagnosis of paroxysmal AFib."
+                },
+                {
+                  "answer_start": 1755,
+                  "text": "Autoimmune hepatitis."
+                },
+                {
+                  "answer_start": 1767,
+                  "text": "Continued home prednisone"
+                },
+                {
+                  "answer_start": 1780,
+                  "text": "Hypertension. Stable."
+                },
+                {
+                  "answer_start": 1797,
+                  "text": "Continued home nifedipine"
+                },
+                {
+                  "answer_start": 1813,
+                  "text": "Alzheimer's dementia.  At baseline."
+                },
+                {
+                  "answer_start": 1827,
+                  "text": "Continued home donepezil and memantine"
+                },
+                {
+                  "answer_start": 1876,
+                  "text": "Acute RLE DVT  Alzheimer's dementia  Autoimmune hepatitis  HCV"
+                }
+              ],
+              "id": 0,
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
+            },
+            {
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?",
+              "id": "1",
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Patient admitted for evaluation of acute RLE DVT.  Due to high  bleeding risk, IVC filter was placed and patient will not be  anti coagulated.  Please resume all previous medications"
                 }
               ]
             },
             {
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "id": "10",
               "answers": [
                 {
-                  "answer_start": 1198,
-                  "text": " DVT.  Diagnosed by LENIs at ___.  Patient started on Lovenox in ED for anticoagulation.  However, given intracranial lesion which is higher risk for bleeding, will discuss utility of IVC filter placement with HCP.  After discussion with HCP ___ ___, decision made to place IVC filter and NOT anti coagulate given the patient's high risk for bleeding.  She went for uncomplicated IVC filter placement on ___.  She will not be anti coagulated going forward."
-                },
-                {
-                  "answer_start": 1395,
-                  "text": "1. Aspirin 81 mg PO DAILY 2. Donepezil 10 mg PO QHS 3. LevETIRAcetam 500 mg PO BID 4. Memantine 21 mg PO DAILY 5. Multivitamins W/minerals 1 TAB PO DAILY 6. NIFEdipine CR 30 mg PO DAILY 7. PredniSONE 5 mg PO DAILY 8. Vitamin E 400 UNIT PO DAILY"
-                },
-                {
-                  "answer_start": 1261,
-                  "text": "IVC filter placement, no anticoagulation, and discharge with previous medication."
-                }
-              ]
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 0,
-                  "text": "The identified problem and the subsequent treatment plan are related."
+                  "answer_start": 926,
+                  "text": "Please resume all previous medications"
                 }
               ],
-              "id": 11,
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 0,
-                  "text": "There is no causal relationship identified between the two major problems identified in this discharge summary."
-                }
-              ],
-              "id": 12,
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -990,58 +1002,58 @@
             {
               "answers": [
                 {
-                  "answer_start": 203,
-                  "text": "The patient was admitted to the plastic surgery service on ___ and had a right mastectomy with an immediate ___ flap. "
-                },
-                {
-                  "answer_start": 236,
-                  "text": "Post-operatively, the patient received morphine PCA with good effect and adequate pain control. When tolerating oral intake, the patient was transitioned to dilaudid PO with good pain relief noted. ."
-                },
-                {
-                  "answer_start": 441,
-                  "text": "At the time of discharge on POD5, the patient was doing well, afebrile with stable vital signs, tolerating a regular diet, ambulating, voiding without assistance, and pain was well controlled."
+                  "answer_start": -1,
+                  "text": "The patient is a  woman with a history of right  breast cancer.  Of note, she had a previous lumpectomy and  radiation in ___ by ___ and she is now found to have a new lesion in her right breast. She  notes that she had previously seen both breast and plastic  surgeons at ___ as well as ___  ___.  She is specifically interested in ___  flap breast reconstruction.  She is very active physically.  She  works out, she walks, she lifts weights. She wears a 38C cup  size bra and would like a reconstruction to a slightly smaller  size.  She works as a ___."
                 }
               ],
-              "id": "9",
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?"
+              "id": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
-                  "answer_start": 203,
-                  "text": "The patient was admitted to the plastic surgery service on ___ and had a right mastectomy with an immediate ___ flap. "
+                  "answer_start": 417,
+                  "text": "The patient was admitted to the plastic surgery service on  ___ and had a right mastectomy with an immediate ___ flap.  The patient tolerated the procedure well.  . Neuro Post-operatively, the patient received morphine PCA with  good effect and adequate pain control."
                 },
                 {
-                  "answer_start": 236,
-                  "text": "Post-operatively, the patient received morphine PCA with good effect and adequate pain control. When tolerating oral intake, the patient was transitioned to dilaudid PO with good pain relief noted. ."
+                  "answer_start": 584,
+                  "text": "When tolerating oral  intake, the patient was transitioned to dilaudid PO with good  pain relief noted.  . CV The patient was stable from a cardiovascular standpoint;  vital signs were routinely monitored. . Pulmonary The patient was stable from a pulmonary standpoint;  vital signs were routinely monitored. . GI/GU Post-operatively, the patient was given IV fluids until  tolerating oral intake."
                 },
                 {
-                  "answer_start": 441,
-                  "text": "At the time of discharge on POD5, the patient was doing well, afebrile with stable vital signs, tolerating a regular diet, ambulating, voiding without assistance, and pain was well controlled."
-                }
-              ],
-              "id": "10",
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?"
-            },
-            {
-              "answers": [
+                  "answer_start": 847,
+                  "text": "Her diet was advanced when appropriate,  which was tolerated well.  She was also started on a bowel  regimen to encourage bowel movement. Foley was removed on POD#1.  Intake and output were closely monitored.  . ID Post-operatively, the patient was started on IV cefazolin,  then switched to PO cefadroxil x 7 days for discharge home."
+                },
                 {
-                  "answer_start": 172,
-                  "text": "The patient had a right mastectomy with an immediate deep inferior epigastric perforator flap."
+                  "answer_start": 1045,
+                  "text": "The  patient received subcutaneous heparin during  this stay, and was encouraged to get up and ambulate as early as  possible. . ___ A Vioptix oximeter was placed on the ___ flap  following surgery. Oxygenation to the tissue was consistently at  99%. Doppler analysis of blood flow to the tissues was performed  regularly. The ___ remained healthy througout her  stay."
+                },
+                {
+                  "answer_start": 1144,
+                  "text": "Patient had an area of ischemic, blistering tissue about  the reconstructive site that developed during her stay.   Bactroban cream was being applied twice per day."
                 }
               ],
-              "id": 11,
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
                   "answer_start": 0,
-                  "text": "Right breast cancer recurrence"
+                  "text": "The patient had a right mastectomy with an immediate deep inferior epigastric perforator flap breast reconstruction. She was discharged home with instructions for drain care, pain management, and activity restrictions."
                 }
               ],
-              "id": 14,
-              "question": "(Text Summarization) List all the diagnoses and determine whether they are from recent onsite visits or past medical history."
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 269,
+                  "text": "1) Right mastectomy  2) Right immediate deep inferior epigastric perforator flap  breast reconstruction."
+                }
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -1580,58 +1592,54 @@
             {
               "answers": [
                 {
-                  "answer_start": 294,
-                  "text": "The patient was started on tPA protocol as follows: tPA 10mg IV over 1 minute then 40mg over 2 hours with continued Unfractionated heparin at 1000u/hour with transition to weight based heparin until therapeutic. Following this, the patient was started on xarelto 15 mg BID on ___ for 3 weeks and then continued on 20 mg xarelto daily. Ambulating on 5L O2, he gets moderately SOB but mainatins O2 sat > 88%. He has been instructed to use O2 with any exertion. The etiology of the patient's pulmonary embolism and lower extremity DVT's was unclear but thought to be due to possible factor V leiden deficiency and other work up given family history in mother of recurrent DVT's as well as recurrent DVT's in father. Plan for outpatient follow up with Hem/Onc to address hypercoagulable work up with Factor V Leiden and antiphospholipid syndrome. Patient also with plan to follow up with Dr. ___ in ___ clinic."
+                  "answer_start": 101,
+                  "text": "The patient is a ___ year old male who presented with one day  history of SOB found to have bilateral PE's at outside hospital,  troponin of 0.32, sinus tachycardia on ECG, and right  ventricular strain on Echo requiring transfer to CCU for  thrombolysis.  #Bilateral Pulmonary Embolisms:  Patient noted to have bilateral pulmonary embolism noted at  outside hospital to have bilateral pulmonary embolism. The  patient was transferred to the CCU for thrombolysis. The patient was started on tPA protocol as follows tPA 10mg IV over 1  minute then 40mg over 2 hours with continued Unfractionated  heparin at 1000u/hour with transition to weight based heparin  until therapeutic. Following this, the patient was started on  xarelto 15 mg BID on ___ for 3 weeks and then continued on  20 mg xarelto daily. Ambulating on 5L O2, he gets moderately SOB  but mainatins O2 sat > 88%. He has been instructed to use O2  with any exertion. The etiology of the patient's pulmonary  embolism and lower extremity DVT's was unclear but thought to be  due to possible factor V leiden deficiency and other work up  given family history in mother of recurrent DVT's as well as  recurrent DVT's in father. Plan for outpatient follow up with  Hem/Onc to address hypercoagulable work up with Factor V Leiden  and antiphospholipid syndrome. Patient also with plan to follow  up with Dr. ___ in ___ clinic. "
                 }
               ],
-              "id": "9",
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?"
+              "id": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
-                  "answer_start": 294,
-                  "text": "The patient was started on tPA protocol as follows: tPA 10mg IV over 1 minute then 40mg over 2 hours with continued Unfractionated heparin at 1000u/hour with transition to weight based heparin until therapeutic. Following this, the patient was started on xarelto 15 mg BID on ___ for 3 weeks and then continued on 20 mg xarelto daily. Ambulating on 5L O2, he gets moderately SOB but mainatins O2 sat > 88%. He has been instructed to use O2 with any exertion. The etiology of the patient's pulmonary embolism and lower extremity DVT's was unclear but thought to be due to possible factor V leiden deficiency and other work up given family history in mother of recurrent DVT's as well as recurrent DVT's in father. Plan for outpatient follow up with Hem/Onc to address hypercoagulable work up with Factor V Leiden and antiphospholipid syndrome. Patient also with plan to follow up with Dr. ___ in ___ clinic."
+                  "answer_start": 807,
+                  "text": "Plan for outpatient follow up with  Hem/Onc to address hypercoagulable work up with Factor V Leiden  and antiphospholipid syndrome."
+                },
+                {
+                  "answer_start": 890,
+                  "text": "Patient also with plan to follow  up with Dr. ___ in ___ clinic.  "
                 }
               ],
-              "id": "10",
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
+            },
+            {
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?",
+              "id": "1",
+              "answers": [
+                {
+                  "answer_start": 831,
+                  "text": "We started a  medication called xarelto that you should take two times per day  with food for three weeks and then once every day indefinately.  This medication is a blood thinner that will help prevent more  clots from forming."
+                }
+              ]
             },
             {
               "answers": [
                 {
-                  "answer_start": 2837,
-                  "text": "We started a medication called xarelto that you should take two times per day with food for three weeks and then once every day indefinately."
+                  "answer_start": 639,
+                  "text": "The patient was started on tPA protocol as follows tPA 10mg IV over 1  minute then 40mg over 2 hours with continued Unfractionated  heparin at 1000u/hour with transition to weight based heparin  until therapeutic."
+                },
+                {
+                  "answer_start": 850,
+                  "text": "Following this, the patient was started on  xarelto 15 mg BID on ___ for 3 weeks and then continued on  20 mg xarelto daily."
+                },
+                {
+                  "answer_start": 1301,
+                  "text": "Plan for outpatient follow up with  Hem/Onc to address hypercoagulable work up with Factor V Leiden  and antiphospholipid syndrome. Patient also with plan to follow  up with Dr. ___ in ___ clinic."
                 }
               ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 0,
-                  "text": "Patient is a ___ year old male who reports that last evening he became suddenly SOB, sweaty, and clammy while at ___ house. At that time he used a fan to cool off and went home. He then went home to sleep and continued to feel short of breath."
-                },
-                {
-                  "answer_start": 338,
-                  "text": "He reports he slept on his side because of SOB when laying flat. In addition he has back pain that he refers to has \"lung pain\" that he rates at ___ that started at the same time as his shortness of breath and claminess yesterday evening."
-                },
-                {
-                  "answer_start": 414,
-                  "text": "In addition he notes weakness in both lower extremities that started today."
-                },
-                {
-                  "answer_start": 790,
-                  "text": "The patient is a ___ year old male who reports that last evening he became suddenly SOB, sweaty, and clammy while at ___ ___."
-                },
-                {
-                  "answer_start": 2837,
-                  "text": "We started a medication called xarelto that you should take two times per day with food for three weeks and then once every day indefinately."
-                }
-              ],
-              "id": "12",
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -2350,114 +2358,42 @@
             {
               "answers": [
                 {
-                  "answer_start": 117,
-                  "text": "Initially started on vanc/zosyn for HCAP, steroids and Bactrim for possible PCP ___ (given recent steroid use), and resp viral panel came back positive for H flu."
-                },
-                {
-                  "answer_start": 157,
-                  "text": "He did not improve on this regimen and still had substantial oxygen requirement."
-                },
-                {
-                  "answer_start": 173,
-                  "text": "Duiresis was attempted without improvement in oxygenation."
-                },
-                {
-                  "answer_start": 190,
-                  "text": "During his course developed worsening acidosis, hyponatremia, and altered mental status."
-                },
-                {
-                  "answer_start": 207,
-                  "text": "He was unable to tolerate POs due to altered mental status, and it was confirmed with family that NGT/PEG were not in goals of care."
-                },
-                {
-                  "answer_start": 229,
-                  "text": "In this setting he was transitioned to comfort care."
-                }
-              ],
-              "id": 9,
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?"
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 117,
-                  "text": "Initially started on vanc/zosyn for HCAP, steroids and Bactrim for possible PCP ___ (given recent steroid use), and resp viral panel came back positive for H flu."
-                },
-                {
-                  "answer_start": 157,
-                  "text": "He did not improve on this regimen and still had substantial oxygen requirement."
-                },
-                {
-                  "answer_start": 173,
-                  "text": "Duiresis was attempted without improvement in oxygenation."
-                },
-                {
-                  "answer_start": 190,
-                  "text": "During his course developed worsening acidosis, hyponatremia, and altered mental status."
-                },
-                {
-                  "answer_start": 207,
-                  "text": "He was unable to tolerate POs due to altered mental status, and it was confirmed with family that NGT/PEG were not in goals of care."
-                },
-                {
-                  "answer_start": 229,
-                  "text": "In this setting he was transitioned to comfort care."
-                }
-              ],
-              "id": 10,
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?"
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 1329,
-                  "text": "He was started on vanc/zosyn for HCAP, steroids and Bactrim for possible PCP ___ (given recent steroid use), and resp viral panel came back positive for H flu."
-                },
-                {
-                  "answer_start": 1384,
-                  "text": "He did not improve on this regimen and still had substantial oxygen requirement. Duiresis was attempted without improvement in oxygenation."
-                },
-                {
-                  "answer_start": 1426,
-                  "text": "During his course developed worsening acidosis, hyponatremia, and altered mental status."
-                },
-                {
-                  "answer_start": 1605,
-                  "text": "He was transitioned to comfort care."
-                }
-              ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
-            },
-            {
-              "answers": [
-                {
                   "answer_start": 0,
-                  "text": "Acute hypoxemic respiratory failure secondary to parainfluenza 3 pneumonia"
-                },
-                {
-                  "answer_start": 71,
-                  "text": "Acute on chronic diastolic heart failure"
-                },
-                {
-                  "answer_start": 98,
-                  "text": "Deep vein thrombosis"
-                },
-                {
-                  "answer_start": 113,
-                  "text": "Atrial fibrillation"
-                },
-                {
-                  "answer_start": 130,
-                  "text": "Rheumatoid arthritis"
-                },
-                {
-                  "answer_start": 148,
-                  "text": "Osteomyelitis"
+                  "text": "The patient presented with acute hypoxemic respiratory failure secondary to parainfluenza 3 pneumonia, acute on chronic diastolic heart failure, deep vein thrombosis, atrial fibrillation, rheumatoid arthritis, and osteomyelitis. The patient was admitted and treated, but unfortunately passed away."
                 }
               ],
-              "id": "14",
-              "question": "(Text Summarization) List all the diagnoses and determine whether they are from recent onsite visits or past medical history."
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
+            },
+            {
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?",
+              "id": "1",
+              "answers": [
+                {
+                  "answer_start": -1,
+                  "text": "The treatment plan for the patient is not mentioned in the given discharge summary."
+                }
+              ]
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": -1,
+                  "text": "The patient has already deceased and there is no future treatment plan."
+                }
+              ],
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": -1,
+                  "text": "There is no sentence in the note that describes the future treatment plan for the patient."
+                }
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -2810,52 +2746,80 @@
               ]
             },
             {
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
-              "id": "9",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?",
+              "id": "1",
               "answers": [
                 {
-                  "answer_start": 2824,
-                  "text": "Pt was calculated to have a free water deficit of ~5L. Her hypernatremia was gradually corrected over the course of 2.5 days with ___ NS after volume resuscitation with LR.  Her sodium was monitored daily and remained within the normal range. Would continue to monitor weekly while at rehab and encourage liquid intake. HCAP: On presentation, pt had worsening mental status, leukocytosis, and CXR c/w possible left lower lobe PNA.  She had a new O2 requirement as well.  She was started on vanc, zosyn, and azythromycin. She completed an 8 day course on ___.  PICC was removed prior to discharge.  Over the course of her stay in the ICU, her O2 requirement resolved. At discharge she was afebrile, oxygen saturation in high ___ on room air breathing comfortably, some improving rhonchi at bases.  Nutrition/Goals of Care: It was suspected that her subacute weight loss is due to her dementia. She was seen by speach and swallow who provided diet recommendations. Also recent malnutrition due to acute illess. The issue of inadequate nutrition in patients with progressive dementia was discussed with her son ___. We dis"
+                  "answer_start": 197,
+                  "text": "Patient with history of Alzheimer's disease, dementia, DM2, anemia, depression, osteoarthritis transferred from OSH w/ AMS and pneumonia. Patient noted to be more confused than usual and complaining of general malaise today at her ___ facility prior to being taken to ___ for evaluation. She was found there to have b/l pneumonia, hyperglycemia and hypernatremia. She was given zosyn prior to transfer to ___. Transfer to ___ d/t no ICU bed at ___. Patient was receiving zosyn but had not been given vancomycin on arrival. At the OSH, initial vitals were ___ 99.1 90% on RA 20sk. Initial labs were significnat for WBC 2.6, k+ 3.0, Na 162 glucose 489. She was give 1 liter of normal saline. She was diagnosed with hypokalemia and a pneumonia and transferred to ___ as there were no open ICU beds. She was given IV Zosyn 3.375 grams, was ordered for 1 gm vancomycn, and given 12 units regular insulin and 1 L normal saline. In the ED, initial VS were 99.2 130 ___ 94% 15L. She was given 1g Vanc, tylenol, and 1L NS for hypovolemia hypernatermia. On arrival to the MICU, VS T 98.1 HR 107 BP 148/120 RR 27 96% on face mask. Pt is responding to commands and speaking intermittently but unable to provide any history."
                 }
               ]
-            },
-            {
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "id": "10",
-              "answers": [
-                {
-                  "answer_start": 2824,
-                  "text": "Pt was calculated to have a free water deficit of ~5L. Her hypernatremia was gradually corrected over the course of 2.5 days with ___ NS after volume resuscitation with LR.  Her sodium was monitored daily and remained within the normal range. Would continue to monitor weekly while at rehab and encourage liquid intake. HCAP: On presentation, pt had worsening mental status, leukocytosis, and CXR c/w possible left lower lobe PNA.  She had a new O2 requirement as well.  She was started on vanc, zosyn, and azythromycin. She completed an 8 day course on ___.  PICC was removed prior to discharge.  Over the course of her stay in the ICU, her O2 requirement resolved. At discharge she was afebrile, oxygen saturation in high ___ on room air breathing comfortably, some improving rhonchi at bases.  Nutrition/Goals of Care: It was suspected that her subacute weight loss is due to her dementia. She was seen by speach and swallow who provided diet recommendations. Also recent malnutrition due to acute illess. The issue of inadequate nutrition in patients with progressive dementia was discussed with her son ___. We dis"
-                }
-              ]
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 2160,
-                  "text": "She was treated with antibiotics and your pneumonia improved."
-                },
-                {
-                  "answer_start": 2214,
-                  "text": "Your mental status also returned to normal."
-                }
-              ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
             },
             {
               "answers": [
                 {
                   "answer_start": 0,
-                  "text": "Healthcare associated pneumonia"
+                  "text": "She was given IV Zosyn  3.375 grams, was ordered for 1 gm vancomycn, and given 12 units  regular insulin and 1 L normal saline."
                 },
                 {
-                  "answer_start": 27,
-                  "text": "Hypernatremia"
+                  "answer_start": 285,
+                  "text": "PICC was removed prior to discharge."
                 }
               ],
-              "id": "12",
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
+            },
+            {
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?",
+              "id": "1",
+              "answers": [
+                {
+                  "answer_start": 776,
+                  "text": "Extended Care Facility: ___"
+                },
+                {
+                  "answer_start": 784,
+                  "text": "Primary Diagnosis Healthcare associated pneumonia  Hypernatremia  Acute metabolic encephalopathy Secondary Diagnosis Alzheimer's dementia  Hypertension Discharge Condition:  Mental Status Confused - always. Level of Consciousness Alert and interactive. Activity Status Out of Bed with assistance to chair or  wheelchair."
+                },
+                {
+                  "answer_start": 0,
+                  "text": "The patient will be transferred to an extended care facility for further care. The primary diagnosis is healthcare-associated pneumonia, hypernatremia, and acute metabolic encephalopathy. Secondary diagnoses include Alzheimer's dementia and hypertension. The patient's mental status is confused, but their level of consciousness is alert and interactive. They are able to get out of bed with assistance to a chair or wheelchair."
+                }
+              ]
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1324,
+                  "text": "Would continue to monitor weekly while at rehab and encourage liquid intake."
+                },
+                {
+                  "answer_start": 1675,
+                  "text": "PICC was removed prior to discharge."
+                },
+                {
+                  "answer_start": 1910,
+                  "text": "She completed an 8 day course on ___."
+                },
+                {
+                  "answer_start": 1944,
+                  "text": "Over the course of her  stay in the ICU, her O2 requirement resolved."
+                },
+                {
+                  "answer_start": 1972,
+                  "text": "At discharge she  was afebrile, oxygen saturation in high ___ on room air  breathing comfortably, some improving rhonchi at bases."
+                },
+                {
+                  "answer_start": 3577,
+                  "text": "1. DuoNeb *NF* (ipratropium-albuterol) 0.5 mg-3 mg(2.5 mg  base)/3 mL Inhalation q6hrs cough  2. Metoprolol Tartrate 12.5 mg PO BID  3. Guaifenesin ER 600 mg PO BID:PRN cough  4. Guaifenesin-Dextromethorphan ___ mL PO Q6H:PRN cough  5. Simvastatin 20 mg PO DAILY  6. Levofloxacin 500 mg PO Q24H  end date ___. Citalopram 20 mg PO DAILY  8. Glargine 14 Units Bedtime 9. Bisacodyl ___AILY:PRN constipation  10. Docusate Sodium 100 mg PO BID  11. Dulcolax ___X/WEEK (MO,TH)  ___ and ___   12. Fleet Enema ___AILY:PRN constipation  13. Senna 2 TAB PO HS  14. Acetaminophen 650 mg PO Q4H:PRN pain  15. Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral qHS  16. Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral TID:PRN  pain"
+                },
+                {
+                  "answer_start": 3590,
+                  "text": "1. Acetaminophen 650 mg PO Q4H:PRN pain  2. Bisacodyl ___AILY:PRN constipation  3. Citalopram 20 mg PO DAILY  4. Senna 2 TAB PO HS  5. Simvastatin 20 mg PO DAILY  6. Docusate Sodium 100 mg PO BID  7. Dulcolax ___X/WEEK (MO,TH)  ___ and ___   8. DuoNeb *NF* (ipratropium-albuterol) 0.5 mg-3 mg(2.5 mg  base)/3 mL Inhalation q6hrs cough  9. Fleet Enema ___AILY:PRN constipation  10. Guaifenesin ER 600 mg PO BID:PRN cough  11. Guaifenesin-Dextromethorphan ___ mL PO Q6H:PRN cough  12. Metoprolol Tartrate 12.5 mg PO BID  13. Norco *NF* (HYDROcodone-acetaminophen) ___ mg Oral TID:PRN  pain  14. Aspirin 81 mg PO DAILY  15. Albuterol 0.083% Neb Soln 1 NEB IH Q6H:PRN sob/cough  16. Ipratropium Bromide Neb 1 NEB IH Q6H:PRN cough/sob  17. Glargine 10 Units Bedtime Insulin SC Sliding Scale using HUM Insulin"
+                }
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
@@ -3228,44 +3192,52 @@
               ]
             },
             {
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
-              "id": 9,
               "answers": [
                 {
-                  "answer_start": 926,
-                  "text": "Mrs. ___ presented to ___ holding at ___ on ___ for a resection of her right chest breast cancer recurrences. She tolerated the procedure well without complications. After a brief and uneventful stay in the PACU, the patient was transferred to the floor for further post-operative management. She was discharged with follow up with both although she had not made a final decision on initiating hospice care."
+                  "answer_start": 136,
+                  "text": "Ms ___ is a ___ woman, who was originally diagnosed with carcinoma of the right breast on ___, which presented as an extremely locally advanced, large exophytic necrotic breast mass complicated by bleeding and repeated episodes of cellulitis and infection required repeating admissions to the hospital and IV  antibiotics. Ms. ___ declined surgery, but ultimately agreed with a radical mastectomy for palliative reasons."
+                },
+                {
+                  "answer_start": 289,
+                  "text": "Prior to the procedure, she spent her time homebound requiring dressing changes every two to two and a half hours and persistently had a very foul-smelling odor.  At the time of the right modified radical mastectomy on ___, she was found to have an invasive ductal carcinoma, 19 x 16 x 11.5 cm with direct invasion into the dermis and epidermis of  the skin with ulceration, grade 3 and deep margins negative, less than 0.1 cm from the deep margin for invasive carcinoma.  She  had nine negative axillary lymph nodes.  The tumor was estrogen and progesterone and HER-2/neu negative.  She did well until early ___ when she was noted to have recurrent nodules on her chest wall."
+                },
+                {
+                  "answer_start": 1196,
+                  "text": "Mrs. ___ presented to ___ holding at ___ on ___  for a resection of her right chest breast cancer recurrences.  She tolerated the procedure well without complications (Please  see operative note for further details). After a brief and  uneventful stay in the PACU, the patient was transferred to the  floor for further post-operative management."
                 }
-              ]
+              ],
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "id": 10,
               "answers": [
                 {
-                  "answer_start": 926,
-                  "text": "Mrs. ___ presented to ___ holding at ___ on ___ for a resection of her right chest breast cancer recurrences. She tolerated the procedure well without complications. After a brief and uneventful stay in the PACU, the patient was transferred to the floor for further post-operative management. She was discharged with follow up with both although she had not made a final decision on initiating hospice care."
+                  "answer_start": 270,
+                  "text": "Ms ___ is a ___ woman, who was originally diagnosed with carcinoma of the right breast on ___, which presented as an extremely locally advanced, large exophytic necrotic breast mass complicated by bleeding and repeated episodes of cellulitis and infection required repeating admissions to the hospital and IV  antibiotics. Ms. ___ declined surgery, but ultimately agreed with a radical mastectomy for palliative reasons.    She was interested in being able to attend church and be able to spend more time with her family and friends, which she has been able to do.  Prior to the procedure, she spent her time homebound requiring dressing changes every two to two and a half hours and persistently had a very foul-smelling odor.  At the time of the right modified radical mastectomy on ___, she was found to have an invasive ductal carcinoma, 19 x 16 x 11.5 cm with direct invasion into the dermis and epidermis of  the skin with ulceration, grade 3 and deep margins negative, less than 0.1 cm from the deep margin for invasive carcinoma.  She  had nine negative axillary lymph nodes.  The tumor was estrogen and progesterone and HER-2/neu negative.  She did well until early ___ when she was noted to have recurrent nodules on her chest wall. She was seen by her medical oncologist, Dr. ___.  On ___, CT of the torso demonstrated the chest wall recurrence as well as progression of nodal disease and lung metastases. She was initially started on capciabine, but with marked and rapid progression of her disease,she was started on oral CMF. She presents for a  palliative resection of the chest wall recurrences."
                 }
-              ]
+              ],
+              "id": "(Content extraction) history treatment plan",
+              "question": "Which sentences in the note describe the history treatment plan for the patient?"
             },
             {
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?",
-              "id": 1,
-              "answers": [
-                {
-                  "answer_start": 123,
-                  "text": "Ms. ___ presents for a palliative resection of the chest wall recurrences."
-                }
-              ]
-            },
-            {
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?",
-              "id": 2,
               "answers": [
                 {
                   "answer_start": 0,
-                  "text": "There are two major problems identified in this discharge summary: breast cancer recurrence and schizophrenia. There is no causal relationship identified between these two problems."
+                  "text": "The patient was discharged to home with follow up in the clinic in ___ weeks. She will follow-up in the clinic in  ___ weeks."
                 }
-              ]
+              ],
+              "id": "",
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 462,
+                  "text": "She will follow-up in the clinic in  ___ weeks."
+                }
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient? (Text Classification)"
             },
             {
               "question": "(Feature extraction) What medications are the patient currently on?",
@@ -3546,48 +3518,72 @@
               ]
             },
             {
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
-              "id": "9",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?",
+              "id": 1,
               "answers": [
                 {
-                  "answer_start": 445,
-                  "text": "Patient was treated with intravenous fluid hydration to manage hypotension and acute renal failure. His medications were adjusted accordingly, and he was advised to follow up with his PCP."
+                  "answer_start": 1033,
+                  "text": "Patient was admitted for an episode of low blood pressure and fatigue, likely a result of decreased oral intake over the past few days. This resolved with intravenous fluid hydration. Changes were made to medication regimen including holding atenolol until seeing PCP."
                 }
               ]
             },
             {
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "id": "10",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?",
+              "id": "1",
               "answers": [
                 {
-                  "answer_start": 445,
-                  "text": "Patient was treated with intravenous fluid hydration to manage hypotension and acute renal failure. His medications were adjusted accordingly, and he was advised to follow up with his PCP."
-                }
-              ]
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 1104,
-                  "text": "The identified problem of low blood pressure and fatigue was likely a result of decreased oral intake over the past few days, which resolved with intravenous fluid hydration."
+                  "answer_start": 1288,
+                  "text": "He was continued on plavix, aspirin, statin, isosorbide and his  ACE.  His atenolol was held given ___."
                 },
                 {
-                  "answer_start": 1259,
-                  "text": "Intravenous fluid hydration was the subsequent treatment plan for the identified problem of low blood pressure and fatigue caused by decreased oral intake over the past few days."
+                  "answer_start": 1339,
+                  "text": "He was hypertensive during admission as his  atenolol was held in the setting of ___.  He was restarted on  isosorbide and his ACE on the second day of admission.  He was  advised to hold his atenolol until he saw his PCP."
+                },
+                {
+                  "answer_start": 1365,
+                  "text": "His glipizide and metformin  were held while admitted and he was covered with sliding scale  insulin."
+                },
+                {
+                  "answer_start": 1399,
+                  "text": "He was  continued on his home dose Namenda and galantamine."
+                },
+                {
+                  "answer_start": 1426,
+                  "text": "His dose of Ranitidine was reduced given ARF during  admission."
+                },
+                {
+                  "answer_start": 1457,
+                  "text": "Mood appropriate. He was continued on citalopram."
                 }
-              ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
+              ]
             },
             {
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?",
+              "id": "1",
               "answers": [
                 {
-                  "answer_start": 214,
-                  "text": "CAD (3VD) is a past medical history and is not related to the current medication regimen."
+                  "answer_start": 0,
+                  "text": "The patient was admitted for an episode of low blood pressure and fatigue, which resolved with intravenous fluid hydration. The patient is advised to eat and drink well at home. The atenolol was held until the patient sees their PCP. The patient's other medications were continued or adjusted as needed, including citalopram, clopidogrel, galantamine, glipizide, lisinopril, memantine, metformin, isosorbide mononitrate, nitroglycerin, Actos, quetiapine, ranitidine HCl, simvastatin, acetaminophen, and aspirin. The patient's mental status is confused, always, and their level of consciousness is alert and interactive."
                 }
-              ],
-              "id": "12",
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              ]
+            },
+            {
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?",
+              "id": "1",
+              "answers": [
+                {
+                  "answer_start": 820,
+                  "text": "Please continue to eat and drink well at home.   "
+                },
+                {
+                  "answer_start": 1303,
+                  "text": "A thyroid function test is pending at the time of discharge.   Please follow up with this at your appointment with Dr. ___. "
+                },
+                {
+                  "answer_start": 1203,
+                  "text": "The following changes were made to your medication regimen HOLD atenolol until you see your PCP ___ ___"
+                }
+              ]
             },
             {
               "answers": [
@@ -4123,41 +4119,45 @@
               "answers": [
                 {
                   "answer_start": 0,
-                  "text": "During a meeting with patient and her family, decision was made to transition care to comfort-directed measures only and to pursue hospice services on discharge."
+                  "text": "The patient is a female with a history of CHF, Afib not on anticoagulation, severe advanced Alzheimer's dementia, osteoporosis, and HTN. She presented to the hospital with sudden onset right hip pain and was found to have a DVT in her left leg. She was also diagnosed with acute CHF and atrial fibrillation. She was treated with diuresis and started on Lovenox for DVT treatment. During her hospitalization, a family meeting was held, and the decision was made to transition care to comfort-directed measures only and to pursue hospice services on discharge. She was discharged to an extended care facility with hospice care."
                 }
               ],
-              "id": 8,
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?"
+              "id": 0,
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
-                  "answer_start": 0,
-                  "text": "During a meeting with patient and her family, decision was made to transition care to comfort-directed measures only and to pursue hospice services on discharge."
+                  "answer_start": 399,
+                  "text": "During a meeting with patient and her family,  decision was made to transition care to comfort-directed  measures only and to pursue hospice services on discharge."
                 }
               ],
-              "id": 9,
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?"
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
             },
             {
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?",
-              "id": 1,
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?",
+              "id": "1",
               "answers": [
                 {
-                  "answer_start": 607,
-                  "text": "During a meeting with patient and her family, decision was made to transition care to comfort-directed measures only and to pursue hospice services on discharge."
+                  "answer_start": 679,
+                  "text": "We decided to focus on your comfort. Because of this,  you are being discharged to ___ for hospice care. "
                 }
               ]
             },
             {
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?",
-              "id": 2,
               "answers": [
                 {
-                  "answer_start": 0,
-                  "text": "There is no direct causal relationship mentioned between the two major problems identified in this discharge summary, which are Deep Vein Thrombosis and Congestive heart failure."
+                  "answer_start": 4465,
+                  "text": "decision was made to transition care to comfort-directed  measures only and to pursue hospice services on discharge."
+                },
+                {
+                  "answer_start": 4553,
+                  "text": "Family did not want to pursue active  treatments such as Lasix, which would make her uncomfortable  given incontinence or shots such as lovenox for treatment of  DVT."
                 }
-              ]
+              ],
+              "id": "1",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "question": "(Feature extraction) What medications are the patient currently on?",
@@ -4454,44 +4454,44 @@
               ]
             },
             {
-              "id": 9,
-              "question": "(Text Summarization) Provide a brief summary of the treatment plan for the patient?",
               "answers": [
                 {
-                  "answer_start": 1482,
-                  "text": "Metoprolol Succinate 50 mg Tablet Sustained Release 24 hr Sig: One (1) Tablet Sustained Release 24 hr PO DAILY (Daily).  2. Aspirin 81 mg Tablet, Delayed Release (E.C.) Sig: One (1) Tablet, Delayed Release (E.C.) PO DAILY (Daily).  3. Omeprazole 20 mg Capsule, Delayed Release(E.C.) Sig: One (1) Capsule, Delayed Release(E.C.) PO once a day.  4. Calcium Acetate 667 mg Capsule Sig: One (1) Capsule PO TID W/MEALS (3 TIMES A DAY WITH MEALS).  5. Sevelamer HCl 800 mg Tablet Sig: One (1) Tablet PO BID (2 times a day).  6. Docusate Sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 times a day).Disp:*60 Capsule(s)* Refills:*2*7. Percocet ___ mg Tablet Sig: ___ Tablets PO every six (6) hours as needed for pain."
-                }
-              ]
-            },
-            {
-              "id": 10,
-              "question": "(Content extraction) Which sentences in the note describe the treatment plan?",
-              "answers": [
-                {
-                  "answer_start": 1482,
-                  "text": "Metoprolol Succinate 50 mg Tablet Sustained Release 24 hr Sig: One (1) Tablet Sustained Release 24 hr PO DAILY (Daily).  2. Aspirin 81 mg Tablet, Delayed Release (E.C.) Sig: One (1) Tablet, Delayed Release (E.C.) PO DAILY (Daily).  3. Omeprazole 20 mg Capsule, Delayed Release(E.C.) Sig: One (1) Capsule, Delayed Release(E.C.) PO once a day.  4. Calcium Acetate 667 mg Capsule Sig: One (1) Capsule PO TID W/MEALS (3 TIMES A DAY WITH MEALS).  5. Sevelamer HCl 800 mg Tablet Sig: One (1) Tablet PO BID (2 times a day).  6. Docusate Sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 times a day).Disp:*60 Capsule(s)* Refills:*2*7. Percocet ___ mg Tablet Sig: ___ Tablets PO every six (6) hours as needed for pain."
-                }
-              ]
-            },
-            {
-              "answers": [
-                {
-                  "answer_start": 0,
-                  "text": "The identified problem is the patient's back pain and difficulty ambulating, and the subsequent treatment plan involved hot packs and prn percocet for pain relief."
+                  "answer_start": 566,
+                  "text": "Patient was admitted for back pain and difficulty walking due to pain.  No neurologic deficits were noted on examination.  Your  XRays of the back did not show a fracture, you have moderate  arthritis of the lumbar spine which is felt to be the source of  you back pain."
                 }
               ],
-              "id": "11",
-              "question": "(Relation Extraction) What is the relationship between the identified problem and the subsequent treatment plan?"
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?"
             },
             {
               "answers": [
                 {
-                  "answer_start": 0,
-                  "text": "There does not appear to be any causal relationship between the two major problems identified in this discharge summary."
+                  "answer_start": 776,
+                  "text": "No changes were made to your home medications, we have only  added percocet as needed for pain, as well as recommending the  use of hot packs as needed to the area of pain."
                 }
               ],
-              "id": "12",
-              "question": "(Relation Extraction) Can you identify any causal relationships between the two major problems identified in this discharge summary?"
+              "id": "",
+              "question": "(Content extraction) Which sentences in the note describe the history treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": -1,
+                  "text": "The patient's future treatment plan involves continuing home medications, using hot packs as needed for pain, and using Percocet as needed for pain. The patient is instructed to return to the emergency department if they develop numbness or weakness of the legs or severe, intractable pain that limits their ability to walk."
+                }
+              ],
+              "id": "1",
+              "question": "(Text Summarization) Provide a brief summary of the future treatment plan for the patient?"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 831,
+                  "text": "No changes were made to your home medications, we have only  added percocet as needed for pain, as well as recommending the  use of hot packs as needed to the area of pain."
+                }
+              ],
+              "id": "",
+              "question": "(Content extraction) Which sentences in the note describe the future treatment plan for the patient?"
             },
             {
               "answers": [
