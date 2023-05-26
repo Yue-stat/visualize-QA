@@ -111,10 +111,12 @@ note = masked["paragraphs"][0]['context']
 
 st.info(note)
 
-st.markdown("""---""")
+
 
 # hidden div with anchor
 st.markdown("<div id='linkto_qa'></div>", unsafe_allow_html=True) 
+
+st.markdown("""---""")
 
 
 col1, col2, col3 = st.columns([1.5,2,0.7])
@@ -145,7 +147,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
     col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
-      st.write(qa['question'])
+      st.write("Q" + qa['id'] + qa['question'])
       st.markdown("""---""")
           
           
