@@ -90,6 +90,12 @@ st.markdown("""---""")
 if "rn" not in st.session_state:
     st.session_state["rn"] = random.randint(1, 10)
 # rand_idx = random.randint(1, 106)
+
+# hidden div with anchor
+st.markdown("<div id='linkto_top'></div>", unsafe_allow_html=True) 
+
+
+
 note_number = st.slider(
     "Select the clinical note. :smile:", 1, 10, st.session_state["rn"]
 )
@@ -212,7 +218,7 @@ if submit:
 else: 
     st.write("Not submitted!")
     
-
+st.markdown("<a href='#linkto_top'>Link to top: re-select note</a>", unsafe_allow_html=True)
 
 
 
