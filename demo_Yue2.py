@@ -139,6 +139,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       Azure = Azure + "; " + answer['text']
     Azure = Azure[2:]
     
+    gpt4 = "To add"
     if k <= 7:
         gpt4 = gpt4_result[note_number-1][k]
         
