@@ -147,8 +147,8 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
     col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
-        qa['id']
-        st.write("Q" + qa['id'] + qa['question'])
+        st.write(qa['id'])
+        st.write(qa['question'])
         
         st.markdown("""---""")
           
