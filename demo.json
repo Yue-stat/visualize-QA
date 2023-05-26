@@ -507,7 +507,7 @@
               "answers": [
                 {
                   "answer_start": 579,
-                  "text": "Ms. ___ is a ___ PMHx advanced Alzheimer's dementia, chronic  HCV, autoimmune hepatitis, and AFib who presents from her SNF  for RLE DVT.  # DVT.  Diagnosed by LENIs at ___.  Patient started on Lovenox  in ED for anticoagulation.  However, given intracranial lesion  which is higher risk for bleeding, will discuss utility of IVC  filter placement with HCP.  After discussion with HCP ___  ___, decision made to place IVC filter and NOT anti  coagulate given the patient's high risk for bleeding."
+                  "text": "Ms. ___ is a ___ PMHx advanced Alzheimer's dementia, chronic  HCV, autoimmune hepatitis, and AFib who presents from her SNF  for RLE DVT.   DVT.  Diagnosed by LENIs at ___.  Patient started on Lovenox  in ED for anticoagulation.  However, given intracranial lesion  which is higher risk for bleeding, will discuss utility of IVC  filter placement with HCP.  After discussion with HCP ___  ___, decision made to place IVC filter and NOT anti  coagulate given the patient's high risk for bleeding."
                 },
                 {
                   "answer_start": 628,
@@ -515,7 +515,7 @@
                 },
                 {
                   "answer_start": 1205,
-                  "text": "Recently seen on brain MRI in ___.   Patient at the time was placed on Keppra for seizure  prophylaxis.  It is high risk for bleeding and that is partly  why IVC filter placement was decided - Continued Keppra 500 mg BID  # A. fib.  Recent diagnosis of paroxysmal AFib.  Despite  CHADSVASC score of 4 warranting anticoagulation, systemic  anticoagulation deferred due to age, risk of fall, and atypical  meningioma at high risk for bleeding. - No rate-control"
+                  "text": "Recently seen on brain MRI in ___.   Patient at the time was placed on Keppra for seizure  prophylaxis.  It is high risk for bleeding and that is partly  why IVC filter placement was decided - Continued Keppra 500 mg BID   A. fib.  Recent diagnosis of paroxysmal AFib.  Despite  CHADSVASC score of 4 warranting anticoagulation, systemic  anticoagulation deferred due to age, risk of fall, and atypical  meningioma at high risk for bleeding. - No rate-control"
                 },
                 {
                   "answer_start": 1351,
@@ -1021,7 +1021,7 @@
                 },
                 {
                   "answer_start": 847,
-                  "text": "Her diet was advanced when appropriate,  which was tolerated well.  She was also started on a bowel  regimen to encourage bowel movement. Foley was removed on POD#1.  Intake and output were closely monitored.  . ID Post-operatively, the patient was started on IV cefazolin,  then switched to PO cefadroxil x 7 days for discharge home."
+                  "text": "Her diet was advanced when appropriate,  which was tolerated well.  She was also started on a bowel  regimen to encourage bowel movement. Foley was removed on POD1.  Intake and output were closely monitored.  . ID Post-operatively, the patient was started on IV cefazolin,  then switched to PO cefadroxil x 7 days for discharge home."
                 },
                 {
                   "answer_start": 1045,
@@ -1593,7 +1593,7 @@
               "answers": [
                 {
                   "answer_start": 101,
-                  "text": "The patient is a ___ year old male who presented with one day  history of SOB found to have bilateral PE's at outside hospital,  troponin of 0.32, sinus tachycardia on ECG, and right  ventricular strain on Echo requiring transfer to CCU for  thrombolysis.  #Bilateral Pulmonary Embolisms:  Patient noted to have bilateral pulmonary embolism noted at  outside hospital to have bilateral pulmonary embolism. The  patient was transferred to the CCU for thrombolysis. The patient was started on tPA protocol as follows tPA 10mg IV over 1  minute then 40mg over 2 hours with continued Unfractionated  heparin at 1000u/hour with transition to weight based heparin  until therapeutic. Following this, the patient was started on  xarelto 15 mg BID on ___ for 3 weeks and then continued on  20 mg xarelto daily. Ambulating on 5L O2, he gets moderately SOB  but mainatins O2 sat > 88%. He has been instructed to use O2  with any exertion. The etiology of the patient's pulmonary  embolism and lower extremity DVT's was unclear but thought to be  due to possible factor V leiden deficiency and other work up  given family history in mother of recurrent DVT's as well as  recurrent DVT's in father. Plan for outpatient follow up with  Hem/Onc to address hypercoagulable work up with Factor V Leiden  and antiphospholipid syndrome. Patient also with plan to follow  up with Dr. ___ in ___ clinic. "
+                  "text": "The patient is a ___ year old male who presented with one day  history of SOB found to have bilateral PE's at outside hospital,  troponin of 0.32, sinus tachycardia on ECG, and right  ventricular strain on Echo requiring transfer to CCU for  thrombolysis.  Bilateral Pulmonary Embolisms:  Patient noted to have bilateral pulmonary embolism noted at  outside hospital to have bilateral pulmonary embolism. The  patient was transferred to the CCU for thrombolysis. The patient was started on tPA protocol as follows tPA 10mg IV over 1  minute then 40mg over 2 hours with continued Unfractionated  heparin at 1000u/hour with transition to weight based heparin  until therapeutic. Following this, the patient was started on  xarelto 15 mg BID on ___ for 3 weeks and then continued on  20 mg xarelto daily. Ambulating on 5L O2, he gets moderately SOB  but mainatins O2 sat > 88%. He has been instructed to use O2  with any exertion. The etiology of the patient's pulmonary  embolism and lower extremity DVT's was unclear but thought to be  due to possible factor V leiden deficiency and other work up  given family history in mother of recurrent DVT's as well as  recurrent DVT's in father. Plan for outpatient follow up with  Hem/Onc to address hypercoagulable work up with Factor V Leiden  and antiphospholipid syndrome. Patient also with plan to follow  up with Dr. ___ in ___ clinic. "
                 }
               ],
               "id": "(Text Summarization) Provide a brief summary of the history treatment plan for the patient?",
