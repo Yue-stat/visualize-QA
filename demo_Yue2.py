@@ -152,9 +152,11 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     
     
     gpt4 = "To add"
+    gpt4_score = "NA"
     if k <= 7 or k >= 12:
         gpt4 = gpt4_result[note_number-1][k]
-        gpt4_score = "NA"
+        gpt4_score = score.iloc[ind]['gpt4_score']
+        
         
         
     col1, col2, col3 = st.columns([1.5,2,0.7])
