@@ -168,7 +168,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
         st.success("ChatGPT score: " + str(chatgpt_score))
         st.warning("GPT-4 score: " + str(gpt4_score))
-        st.error("Alpaca score: " + str(alpaca_score))
+        st.error("Eevee score: " + str(alpaca_score))
           
           
     with col2:
@@ -176,7 +176,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.success(Azure)
       st.write("**GPT-4**")
       st.warning(gpt4)
-      st.write("**Alpaca**")
+      st.write("**Eevee**")
       st.error(alpaca)
       st.markdown("""---""")
   
