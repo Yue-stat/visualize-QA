@@ -166,9 +166,9 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
         st.markdown("""---""")
         
-        st.write("ChatGPT score: " + str(chatgpt_score))
-        st.write("GPT-4 score: " + str(gpt4_score))
-        st.write("Alpaca score: " + str(alpaca_score))
+        st.success("ChatGPT score: " + str(chatgpt_score))
+        st.warning("GPT-4 score: " + str(gpt4_score))
+        st.error("Alpaca score: " + str(alpaca_score))
           
           
     with col2:
