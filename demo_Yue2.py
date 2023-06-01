@@ -142,16 +142,20 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     for answer in qa['answers']:
       Azure = Azure + "; " + answer['text']
     Azure = Azure[2:]
-    
-    gpt4 = "To add"
-    if k <= 7 or k >= 12:
-        gpt4 = gpt4_result[note_number-1][k]
+
     
     ind = 30*(note_number-1) + k
     chatgpt_score = score.iloc[ind]['chatgpt_score']
     gpt4_score = score.iloc[ind]['gpt4_score']
     alpaca_score = score.iloc[ind]['alpaca_score']   
     alpaca = score.iloc[ind]['alpaca']  
+    
+    
+    gpt4 = "To add"
+    if k <= 7 or k >= 12:
+        gpt4 = gpt4_result[note_number-1][k]
+        gpt4_score = "NA"
+        
         
     col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
@@ -171,7 +175,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.write("**GPT-4**")
       st.warning(gpt4)
       st.write("**Alpaca**")
-      st.warning(alpaca)
+      st.error(alpaca)
       st.markdown("""---""")
   
     with col3:
