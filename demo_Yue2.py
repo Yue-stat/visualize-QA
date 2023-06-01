@@ -201,7 +201,9 @@ submit =  st.button('Submit your choices above')
 if submit:
     if username == '':
         username = 'anonymous-' + ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
-    st.write("Your username is ", f"{username}")
+        st.error("Username not entered. Your assigned username is: ", f"{username}")
+    else:
+        st.write("Your username is: ", f"{username}")
     
 #    with open('feedback.json') as json_file:
  #       feedback = json.load(json_file)
