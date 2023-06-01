@@ -248,7 +248,7 @@ if submit:
 else: 
     st.write("Not submitted!")
     
-st.markdown("<a href='#linkto_top'>Link to top: re-select note</a>", unsafe_allow_html=True)
+st.markdown("<a href='#linkto_top'>Back to Top: Re-select Note</a>", unsafe_allow_html=True)
 
 with st.sidebar:
     st.markdown("<a href='#linkto_top'>Link to note</a>", unsafe_allow_html=True)
