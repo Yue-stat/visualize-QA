@@ -246,9 +246,9 @@ if submit:
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     # push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
-    st.error("Sumbitted!")
+    st.success("Sumbitted!")
 else: 
-    st.message("Not submitted!")
+    st.warning("Not submitted!")
     
 st.markdown("<a href='#linkto_top'>Back to Top: Re-select Note</a>", unsafe_allow_html=True)
 
