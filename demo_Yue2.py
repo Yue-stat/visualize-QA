@@ -76,6 +76,8 @@ gpt4 = "To add"
 with open('gpt4_result.json') as json_file:
     gpt4_result = json.load(json_file)
 
+score = pd.read_csv('score.csv')
+
 A = [["" for i in range(30)] for j in range(10)]
 
 st.title("GPT Prompt and Answers Demo")
@@ -144,6 +146,12 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     gpt4 = "To add"
     if k <= 7 or k >= 12:
         gpt4 = gpt4_result[note_number-1][k]
+    
+    ind = 30*(note_number-1) + k
+    chatgpt_score = score.iloc[ind]['chatgpt_score']
+    gpt4_score = score.iloc[ind]['gpt4_score']
+    alpaca_score = score.iloc[ind]['alpaca_score']   
+    alpaca = score.iloc[ind]['alpaca']  
         
     col1, col2, col3 = st.columns([1.5,2,0.7])
     with col1:
@@ -151,6 +159,10 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         st.write(qa['question'])
         
         st.markdown("""---""")
+        
+        st.write("ChatGPT score: " + str(chatgpt_score))
+        st.write("GPT-4 score: " + str(gpt4_score))
+        st.write("Alpaca score: " + str(alpaca_score))
           
           
     with col2:
@@ -158,6 +170,8 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
       st.success(Azure)
       st.write("**GPT-4**")
       st.warning(gpt4)
+      st.write("**Alpaca**")
+      st.warning(alpaca)
       st.markdown("""---""")
   
     with col3:
