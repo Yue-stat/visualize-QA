@@ -201,7 +201,7 @@ submit =  st.button('Submit your choices above')
 if submit:
     if username == '':
         username = 'anonymous-' + ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
-        st.write("Username not entered. Your assigned username is: ", f"{username}")
+        st.error(f"Username not entered. Your assigned username is: {username}")
     else:
         st.write("Your username is: ", f"{username}")
     
@@ -246,9 +246,9 @@ if submit:
     push_to_repo_branch("feedback.txt", data, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     # push_to_repo_branch(username+".txt", A, "Yue-stat/visualize-QA", "main", "Yue-stat",st.secrets["token"])
     
-    st.write("Sumbitted!")
+    st.error("Sumbitted!")
 else: 
-    st.write("Not submitted!")
+    st.message("Not submitted!")
     
 st.markdown("<a href='#linkto_top'>Back to Top: Re-select Note</a>", unsafe_allow_html=True)
 
