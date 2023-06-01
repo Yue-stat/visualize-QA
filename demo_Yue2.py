@@ -197,7 +197,7 @@ import string
 
 # print('anonymous-'.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5)))
 
-submit =  st.button('Submit your choices above')
+submit =  st.button('Submit Your Selected Choices')
 if submit:
     if username == '':
         username = 'anonymous-' + ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=5))
