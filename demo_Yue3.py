@@ -130,7 +130,7 @@ with col1:
 with col2:
   st.write("Answers")
 with col3:
-    st.write("Select your preference 👇. The default is ChatGPT")
+    st.write("Choose your score for Eevee 👇. The default is 0")
   
 
       
@@ -182,7 +182,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
   
     with col3:
         A60 = st.radio(
-        "Select: ",
+        "Rate Eevee:",
         [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9, 10],
         key=30*(note_number-1)+k,
         )
