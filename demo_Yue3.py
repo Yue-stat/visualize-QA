@@ -183,7 +183,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
     with col3:
         A60 = st.radio(
         "Select: ",
-        ["ChatGPT", "GPT-4"],
+        [0, 1,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9, 10],
         key=30*(note_number-1)+k,
         )
         
