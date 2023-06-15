@@ -130,7 +130,7 @@ with col1:
 with col2:
   st.write("Answers")
 with col3:
-    st.write("Choose your score for Eevee 👇. The default is 0")
+    st.write("Choose your score for Eevee 👇 on a scale of 0 to 10")
   
 
       
