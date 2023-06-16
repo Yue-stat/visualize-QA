@@ -121,7 +121,7 @@ st.markdown("<div id='linkto_qa'></div>", unsafe_allow_html=True)
 st.markdown("""---""")
 
 
-col1, col2, col3 = st.columns([1.5,2,0.4])
+col1, col2, col3 = st.columns([1.3,2,0.3])
 
 with col1:
   st.write("Questions")
@@ -159,7 +159,7 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
         
         
-    col1, col2, col3 = st.columns([1.5,2,0.7])
+    col1, col2, col3 = st.columns([1.3,2,0.3])
     with col1:
         st.write("Q" + str(k+1))
         st.write(qa['question'])
