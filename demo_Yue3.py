@@ -121,7 +121,7 @@ st.markdown("<div id='linkto_qa'></div>", unsafe_allow_html=True)
 st.markdown("""---""")
 
 
-col1, col2, col3 = st.columns([1.5,2,0.7])
+col1, col2, col3 = st.columns([1.5,2,0.4])
 
 with col1:
   st.write("Questions")
