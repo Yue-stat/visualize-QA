@@ -160,7 +160,8 @@ for k, qa in enumerate(masked["paragraphs"][0]['qas']):
         
         
         
-    col1, col2, col3 = st.columns([0.6,2,0.2])
+    col1, col2, col3 = st.columns([0.56,2,0.2])
+    st.markdown("""---""")
     with col1:
         st.write("Q" + str(k+1))
         st.write(qa['question'])
