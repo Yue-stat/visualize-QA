@@ -10,6 +10,7 @@ import base64
 import json
 import datetime
 
+st.set_page_config(layout="wide")
 
 def push_to_repo_branch(gitHubFileName, data, repo_slug, branch, user, token):
     
